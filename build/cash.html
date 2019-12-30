@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.css">
 		<link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
-		<link rel="stylesheet" href="css/main.css?v=1577687368636">
+		<link rel="stylesheet" href="css/main.css?v=1577697659256">
 	</head>
 	<body>
 		<div class="main-wrap">
@@ -77,7 +77,7 @@
 							</div>
 						</div>
 						<div class="main-content">
-							<div class="cash">
+							<div class="cash cash-panel">
 								<div class="cash-decor__top cash-decor-item"><img src="images/decor/cash-decor-top.png" alt=""></div>
 								<div class="cash-decor__bottom cash-decor-item"><img src="images/decor/cash-decor-bottom.png" alt=""></div>
 								<div class="cash__heading">
@@ -93,9 +93,7 @@
 											</div>
 										</div>
 										<div class="cash-form__logo"><img src="images/icon/logotip-payeer.png" alt=""></div>
-										<div class="cash-form__bottom">
-											<button class="btn cash-form__btn text-sm">ПОПОЛНИТЬ СЧЕТ</button>
-										</div>
+										<button class="btn cash-form__btn text-sm">ПОПОЛНИТЬ СЧЕТ</button>
 									</form>
 								</div>
 							</div>
@@ -140,6 +138,26 @@
 					</div>
 				</div>
 			</main>
+			<!-- Button trigger modal-->
+			<!-- Modal-->
+			<div class="modal madal-activation" id="activationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="madal-activation-decor madal-activation-decor__top"><img src="images/decor/modal-act-decor.png" alt=""></div>
+						<div class="madal-activation-decor madal-activation-decor__bottom"><img src="images/decor/modal-act-decor.png" alt=""></div>
+						<h5 class="madal-activation__title">Activation</h5>
+						<div class="madal-activation__balans"><img src="images/balans-modal.png" alt=""><span class="madal-activation__balans__label">Ваш баланс: 0</span></div>
+						<div class="madal-activation__inputs">
+							<input class="form-control cash-form__input" type="text" value="" placeholder="Сумма пополнения: 10.00 USD">
+							<input class="form-control cash-form__input" type="text" value="" placeholder="Система оплаты:">
+						</div>
+						<div class="cash-form__logo"><img src="images/icon/logotip-payeer.png" alt=""></div>
+						<div class="cash-form__bottom">
+							<button class="btn cash-form__btn text-sm">ПОПОЛНИТЬ СЧЕТ</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<nav class="menu-mob">
 				<ul class="menu-mob-list">
 					<li> <a href="#">Активация</a></li>
@@ -159,11 +177,11 @@
 				</ul>
 			</nav>
 		</div>
-		<script src="js/jquery/dist/jquery.min.js?v=1577687368636"> </script>
+		<script src="js/jquery/dist/jquery.min.js?v=1577697659256"> </script>
 		<script src="https://unpkg.com/filepond/dist/filepond.min.js"> </script>
 		<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"> </script>
 		<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
-		<script src="js/vendor.js?v=1577687368636"></script>
-		<script src="js/main.js?v=1577687368636"></script>
+		<script src="js/vendor.js?v=1577697659256"></script>
+		<script src="js/main.js?v=1577697659256"></script>
 	</body>
 </html>
