@@ -1,0 +1,19 @@
+// stylelint-disable no-empty-source
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+
+
+
+
+@font-face {
+    font-family: 'Pobeda';
+    src: url('../fonts/pobeda/pobeda_bold.eot');
+    src: url('../fonts/pobeda/pobeda_bold.eot') format('embedded-opentype'),
+         url('../fonts/pobeda/pobeda_bold.woff2') format('woff2'),
+         url('../fonts/pobeda/pobeda_bold.woff') format('woff'),
+         url('../fonts/pobeda/pobeda_bold.ttf') format('truetype'),
+         url('../fonts/pobeda/pobeda_bold.svg#pobeda_bold') format('svg');
+}
+

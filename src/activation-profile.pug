@@ -1,0 +1,293 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		//- .site__layer
+		include pug/header
+
+		main.main
+			.container-fluid
+				.main-container.main-container_left-sidebar
+					.sidebar.left-sidebar
+
+							ul.category-nav
+								li 
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-1.png", srcset="images/icons/ico-1@2x.png 2x" alt="")
+										span.link
+											| Активация
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-2.png", srcset="images/icons/ico-2@2x.png 2x" alt="")
+										span.link
+											| Моя страница
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-3.png", srcset="images/icons/ico-3@2x.png 2x" alt="")
+										a(href="#")
+											| Новости
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-4.png", srcset="images/icons/ico-4@2x.png 2x" alt="")
+										span.link
+											| Сообщения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-5.png", srcset="images/icons/ico-5@2x.png 2x" alt="")
+										a(href="#")
+											| Топ-Лидеры
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-6.png", srcset="images/icons/ico-6@2x.png 2x" alt="")
+										span.link
+											| Друзья
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-7.png", srcset="images/icons/ico-7@2x.png 2x" alt="")
+										span.link
+											| Видеозаписи
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-8.png", srcset="images/icons/ico-8@2x.png 2x" alt="")
+										span.link
+											| Фотогалерея
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-9.png", srcset="images/icons/ico-9@2x.png 2x" alt="")
+										a(href="#")
+											| Музыка
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-10.png", srcset="images/icons/ico-10@2x.png 2x" alt="")
+										span.link
+											| Развлечения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-11.png", srcset="images/icons/ico-11@2x.png 2x" alt="")
+										span.link
+											| Реклама
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-12.png", srcset="images/icons/ico-12@2x.png 2x" alt="")
+										a(href="#")
+											| Настройки
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-13.png", srcset="images/icons/ico-13@2x.png 2x" alt="")
+										span.link
+											| Support
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-14.png", srcset="images/icons/ico-14@2x.png 2x" alt="")
+										span.link
+											| Выход
+
+							.news-panel
+								h2.news-panel__title.text-md
+									| Актуальные акции или важные новости:
+
+								.news-panel__inner.panel
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| МЕСЯЦ про аккаунта в подарок
+
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| НОВЫЙ ЛИДЕР
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+
+					.main-content
+						.pyramid-grid
+							.row.pyramid__row
+								.col-12.pyramid__col.pyramid__col_lead.pyramid__col_first
+									.pyramid__col__line
+										span
+									.profile_pyramid-wrap
+										.profile_pyramid__left-top
+											img(src="images/decor/profile_pyramid-decor.png", alt="")
+
+										.profile_pyramid__right-bottom
+											img(src="images/decor/profile_pyramid-decor.png", alt="")
+
+										.profile-box.panel.profile_pyramid
+											.profile_pyramid-decor__left-top
+												img(src="images/decor/profile_pyramid-left-top.svg", alt="")
+											.profile_pyramid-decor__right-bottom
+												img(src="images/decor/profile_pyramid-left-top.svg", alt="")
+											.profile_pyramid-decor__right-top
+												img(src="images/decor/profile_pyramid-right-top.svg", alt="")
+
+											.profile-box__image
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile-box__info
+												.profile-box__cn
+													h4.profile-box__title
+														| Яна Прохорова
+													.profile-box__meta
+														| ID: 108932
+
+												.profile-box__btns
+													a(href="#").btn.btn-small.profile-box__btn.text-sm
+														| сТруктура
+
+
+
+							.row.pyramid__row
+								.col-md-4.col-sm-6.pyramid__col
+									.pyramid__col__line
+										span
+									.profile_pyramid-wrap
+										.profile-box.panel.profile_pyramid
+
+
+											.profile-box__image
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile-box__info
+												.profile-box__cn
+													h4.profile-box__title
+														| Яна Прохорова
+													.profile-box__meta
+														| ID: 108932
+
+												.profile-box__btns
+													a(href="#").btn.btn-small.profile-box__btn
+														| Написать
+													a(href="#").btn.btn-small.profile-box__btn
+														| сТруктура
+
+								.col-md-4.col-sm-6.pyramid__col.pyramid__col_lead
+									.pyramid__col__line
+										span
+									.profile_pyramid-wrap
+										.profile-box.panel.profile_pyramid
+
+
+											.profile-box__image
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile-box__info
+												.profile-box__cn
+													h4.profile-box__title
+														| Яна Прохорова
+													.profile-box__meta
+														| ID: 108932
+
+												.profile-box__btns
+													a(href="#").btn.btn-small.profile-box__btn
+														| Написать
+													a(href="#").btn.btn-small.profile-box__btn
+														| сТруктура
+
+
+								.col-md-4.col-sm-6.pyramid__col
+									.pyramid__col__line
+										span
+									.profile_pyramid-wrap
+										.profile-box.panel.profile_pyramid
+
+
+											.profile-box__image
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile-box__info
+												.profile-box__cn
+													h4.profile-box__title
+														| Яна Прохорова
+													.profile-box__meta
+														| ID: 108932
+
+												.profile-box__btns
+													a(href="#").btn.btn-small.profile-box__btn
+														| Написать
+													a(href="#").btn.btn-small.profile-box__btn
+														| сТруктура
+
+
+
+
+				.sidebars-mobile.row
+					.col-6
+						.sidebar-mob-panel.sidebar-mob_news.box-bd
+							.sidebar-mob-toggle
+								span
+							.sidebar-mob-panel__inner
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| МЕСЯЦ про аккаунта в подарок
+
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+					.col-6
+						.d-flex.justify-content-end
+							.sidebar-mob-panel.sidebar-mob_profiles.profiles-mob.box-bd
+								.sidebar-mob-toggle
+									span
+								.sidebar-mob-panel__inner
+									h2.profiles-mob__title
+										| Топ-Лидеры
+									ul.profiles-mob__list
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+									.profiles-mob__view
+										a(href="#")
+											| Посмотреть всех
+
+
+		include pug/footer    

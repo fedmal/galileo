@@ -1,0 +1,922 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		//- .site__layer
+		include pug/header 
+
+		main.main
+			.container-fluid
+				.row
+					.col-lg-4
+						.sidebar.panel
+							ul.category-nav
+								li 
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-1.png", srcset="images/icons/ico-1@2x.png 2x" alt="")
+										span.link
+											| Активация
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-2.png", srcset="images/icons/ico-2@2x.png 2x" alt="")
+										span.link
+											| Моя страница
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-3.png", srcset="images/icons/ico-3@2x.png 2x" alt="")
+										span.link
+											| Новости
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-4.png", srcset="images/icons/ico-4@2x.png 2x" alt="")
+										span.link
+											| Сообщения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-5.png", srcset="images/icons/ico-5@2x.png 2x" alt="")
+										span.link
+											| Топ-Лидеры
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-6.png", srcset="images/icons/ico-6@2x.png 2x" alt="")
+										span.link
+											| Друзья
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-7.png", srcset="images/icons/ico-7@2x.png 2x" alt="")
+										span.link
+											| Видеозаписи
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-8.png", srcset="images/icons/ico-8@2x.png 2x" alt="")
+										span.link
+											| Фотогалерея
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-9.png", srcset="images/icons/ico-9@2x.png 2x" alt="")
+										span.link
+											| Музыка
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-10.png", srcset="images/icons/ico-10@2x.png 2x" alt="")
+										span.link
+											| Развлечения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-11.png", srcset="images/icons/ico-11@2x.png 2x" alt="")
+										span.link
+											| Реклама
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-12.png", srcset="images/icons/ico-12@2x.png 2x" alt="")
+										span.link
+											| Настройки
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-13.png", srcset="images/icons/ico-13@2x.png 2x" alt="")
+										span.link
+											| Support
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-14.png", srcset="images/icons/ico-14@2x.png 2x" alt="")
+										span.link
+											| Выход
+
+
+
+					.col-xl-8
+						.header-info
+							.header-info__item
+									.header-info-box
+										.header-info-box__label
+											| ДРУЗЬЯ 
+										.header-info-box__count
+											| 733
+							.header-info__item
+									.header-info-box
+										.header-info-box__label
+											| ЗАЯВКИ
+										.header-info-box__count
+											| 26
+							.header-info__item.header-info__search
+										.search
+											.search-right__bg
+												img(src="images/corner/chat-sidebar-search-right.svg", alt="")
+											form.search-form
+												input(type="text", placeholder="Поиск").search__input
+												.search__spinner.rotating
+													span
+
+
+						.lavels
+							.row.lavels__row
+								.col-xl-6.lavels__col
+										.lavel-line
+											span
+										.lavel-box
+											.lavel-box__line
+												span
+
+											.lavel-box__decor.lavel-box__decor_top
+												img(src="images/lavel/panel-blue-decor.svg", alt="")
+											.lavel-box__decor.lavel-box__decor_bottom
+												img(src="images/lavel/panel-blue-decor.svg", alt="")
+
+											h2.lavel-box__title
+												| ACTIVATION
+											.lavel-box__content
+												p
+													| Добро пожаловать на первый уровень Активации! 
+													| Вы уже сделали свой первый шаг к успеху. С этого момента вы становитесь нашим 
+													| пользователем, а значит мы начинаем платить вам за ваше время. Вы получаете 
+													| пассивный доход и можете проводить время в Galileo в свое удовольствие.
+
+											.lavel-box__btn__wrap
+												a(href="#").btn.btn-xl.lavel-box__btn
+													| Открыть
+
+								.col-xl-6.lavels__col
+									
+										.lavel-box.label-box_green
+											.lavel-box__line
+												span
+
+											.lavel-box__decor.lavel-box__decor_top
+												img(src="images/lavel/panel-green-decor.svg", alt="")
+											.lavel-box__decor.lavel-box__decor_bottom
+												img(src="images/lavel/panel-green-decor.svg", alt="")
+
+											h2.lavel-box__title
+												| POLYGON
+											.lavel-box__content
+												p
+													| Поздравляем! Вы начинаете развивать свое сообщество и приглашать друзей! С этого 
+													| момента каждый приглашенный вами друг будет приносить вам реальный доход! Все что 
+													| вам нужно сделать для вашего успеха, это пригласить своих друзей и 
+													| наслаждаться общением.
+
+											.lavel-box__btn__wrap
+												a(href="#").btn.btn-xl.lavel-box__btn
+													| Открыть
+
+								.col-xl-6.lavels__col
+									
+										.lavel-box.label-box_red
+											.lavel-box__line
+												span
+
+											.lavel-box__decor.lavel-box__decor_top
+												img(src="images/lavel/panel-red-decor.svg", alt="")
+											.lavel-box__decor.lavel-box__decor_bottom
+												img(src="images/lavel/panel-red-decor.svg", alt="")
+
+											h2.lavel-box__title
+												| VIP
+											.lavel-box__content
+												p
+													| Хочешь получить больше? Уровень VIP – только для тех, кто не боится больших 
+													| доходов! Попадая на этот уровень, вы можете стать королём этой вселенной! 
+													| Вы будете управлять не только своей компанией, но и получать с нее отличные 
+													| дивиденды! VIP - подарит вам возможность получить: круизное 
+													| VIP – путешествие, квартиру с техникой Galileo, Автомобиль и 100 000$! 
+													| Переходите на уровень VIP И ЗАБЕРИТЕ СВОЕ ПО ПРАВУ!
+
+											.lavel-box__btn__wrap
+												a(href="#").btn.btn-xl.lavel-box__btn
+													| Открыть
+
+
+
+				//- .active-grid
+
+				//- 				.row.active__row
+				//- 					each activeBox, key in activeGrid
+				//- 						.col-5.active__col
+
+				//- 							.active__col__left-decor
+				//- 							.active__col__right-decor
+
+				//- 							.activ-box 
+				//- 								.activ-box__decor
+				//- 								.active-box__num.box-bd= `${key + 1}`
+
+													
+				//- 									span.active-box__num__decor.active-box__num__decor_top
+				//- 									span.active-box__num__decor.active-box__num__decor_bottom
+				//- 								.active-box__body
+				//- 									.active-box__item.box-bd
+				//- 										| ACTIVATION
+													
+				//- 									a(href="#").btn.active-box__item.box-bd
+				//- 										| Открыть
+
+
+
+				.pyramid-grid
+					.row.pyramid__row
+						.col-12.pyramid__col.pyramid__col_lead
+							.pyramid__col__line
+								span
+
+							.profile-box.panel.profile_pyramid
+
+								.profile-box__image
+									span
+										img(src="images/profile.jpg", alt="")
+								.profile-box__info
+									.profile-box__cn
+										h4.profile-box__title
+											| Яна Прохорова
+										.profile-box__meta
+											| ID: 108932
+
+									.profile-box__btns
+										a(href="#").btn.btn-small.profile-box__btn.text-sm
+											| сТруктура
+
+
+
+					.row.pyramid__row
+						.col-lg-4.pyramid__col
+							.pyramid__col__line
+								span
+
+							.profile-box.panel.profile_pyramid
+
+
+								.profile-box__image
+									span
+										img(src="images/profile.jpg", alt="")
+								.profile-box__info
+									.profile-box__cn
+										h4.profile-box__title
+											| Яна Прохорова
+										.profile-box__meta
+											| ID: 108932
+
+									.profile-box__btns
+										a(href="#").btn.btn-small.profile-box__btn
+											| Написать
+										a(href="#").btn.btn-small.profile-box__btn
+											| сТруктура
+
+						.col-lg-4.pyramid__col
+							.pyramid__col__line
+								span
+
+							.profile-box.panel.profile_pyramid
+
+
+								.profile-box__image
+									span
+										img(src="images/profile.jpg", alt="")
+								.profile-box__info
+									.profile-box__cn
+										h4.profile-box__title
+											| Яна Прохорова
+										.profile-box__meta
+											| ID: 108932
+
+									.profile-box__btns
+										a(href="#").btn.btn-small.profile-box__btn
+											| Написать
+										a(href="#").btn.btn-small.profile-box__btn
+											| сТруктура
+
+
+						.col-lg-4.pyramid__col
+							.pyramid__col__line
+								span
+
+							.profile-box.panel.profile_pyramid
+
+
+								.profile-box__image
+									span
+										img(src="images/profile.jpg", alt="")
+								.profile-box__info
+									.profile-box__cn
+										h4.profile-box__title
+											| Яна Прохорова
+										.profile-box__meta
+											| ID: 108932
+
+									.profile-box__btns
+										a(href="#").btn.btn-small.profile-box__btn
+											| Написать
+										a(href="#").btn.btn-small.profile-box__btn
+											| сТруктура
+
+				.profiles-table
+					.profiles-table-decor-item.profiles-table-decor__top
+						img(src="images/decor/profiles-table-decor.png" alt="")
+					.profiles-table-decor-item.profiles-table-decor__bottom
+						img(src="images/decor/profiles-table-decor.png" alt="")
+
+					.profiles-table__panel
+						.profiles-table-decor-item.profiles-table-decor__left-top
+							img(src="images/corner/table-left-top.svg", alt="")
+						.profiles-table-decor-item.profiles-table-decor__right-top
+							img(src="images/corner/table-right-top.svg", alt="")
+						.profiles-table-decor-item.profiles-table-decor__right-bottom
+							img(src="images/corner/table-right-bottom.svg", alt="")
+						.profiles-table-decor-item.profiles-table-decor__left-bottom
+							img(src="images/corner/table-left-bottom.svg", alt="")
+
+						.profiles-table__panel__line.profiles-table__panel__line_top
+						.profiles-table__panel__line.profiles-table__panel__line_left
+						.profiles-table__panel__line.profiles-table__panel__line_right
+						.profiles-table__panel__line.profiles-table__panel__line_bottom
+
+						//- each activeBox, key in activeGrid
+						
+						//- 	.profile-box.profile-box_table
+						//- 			.profile-table-decor-left-top__bg
+						//- 				img(src="images/corner/profile-table-left-top.svg", alt="")
+						//- 			.profile-table-decor-left-bottom__bg
+						//- 				img(src="images/corner/profile-table-left-bottom.svg", alt="")
+						//- 			.profile-box__info__left
+						//- 				.profile-box__image.profile-img
+						//- 					span
+						//- 						img(src="images/profile-table.jpg", alt="")
+									
+
+						//- 				h4.profile-box__title
+						//- 					| Яна Прохорова
+									
+						//- 			.profile-box__info__center
+						//- 				.profile-box__status
+						//- 					| VIP
+
+						//- 				.profile-box__friends
+						//- 					.profile-box__friends__label
+						//- 						| ДРУЗЬЯ 
+						//- 					.profile-box__friends__count
+						//- 						| 733
+
+						//- 				.profile-box__friends
+						//- 					.profile-box__friends__label
+						//- 						| Общие друзья
+						//- 					.profile-box__friends__count
+						//- 						| 733
+						//- 			.profile-box__info__right
+
+						//- 					a(href="#").btn.profile-box__btn
+						//- 						| Написать
+
+				.profile-detail-wrap
+					.container_712
+						.decor-large
+							.decor-large__top.decor-large-item
+								img(src="images/decor/top-large-top.png", alt="")
+							.decor-large__bottom.decor-large-item
+								img(src="images/decor/top-large-bottom.png", alt="")
+
+							.profile-detail.box-bd
+
+
+								.profile-detail__left
+									.profile-detail__content.box-bd
+										p
+											| Хореограф 
+											br
+											| Постановщик 
+											br
+											| Вдохновитель 
+											br
+											| dance_school_megapir 
+											br
+											| МАМА 
+											br
+											| стиль ,мода ,еда ,путешествия
+								.profile-detail__right
+									.profile-detail__panel.box-bd
+										ul.profile-detail__list
+											li.box-bd Друзья: 432
+											li.box-bd ФОТО: 123
+											li.box-bd Видео: 63
+										.profile-detail__image.profile-img
+											span
+												img(src="images/profile-detail.png", alt="")
+									.profile-detail__bottom
+										.profile-detail__bottom__inner
+											.profile__detail__title.text-xl
+												| Яна
+												br
+												| Прохорова
+											.profile__detail__id
+												| ID: 108932
+											a(href="#").profile__detail__button.btn.btn-small
+												| НАПИСАТЬ
+
+
+							.message-panel
+								//- .message-panel__inner
+								.message-panel__bg
+								.message-panel__left-bg
+									img(src="images/corner/message-left-bg.svg", alt="")
+								.message-panel__right-bg
+									img(src="images/corner/message-right-bg.svg", alt="")
+
+								input(type="text").message-panel__input.text-sm
+								.message-panel__right
+									ul.message-panel__icons
+										li
+											a(href="#")
+												img(src="images/icon/smile.png", alt="")
+										li
+											a(href="#")
+												img(src="images/icon/upload.png", alt="")
+									button.btn.message-panel__btn
+										| Отправить
+
+			
+				.comments
+					.container_712
+						.comment-lead.box-bd
+							.comment-lead__heading
+								.comment-lead__heading__left
+									.profile-head
+										.profile-head__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										h4.profile-head__title.text-sm
+											| Яна Прохорова
+								.comment-lead__heading__right
+									.date.comment-lead__date
+										| 24.10.19
+
+							.comment-lead__body
+								.comment-lead__content.text
+									p
+										| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+										| некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст 
+										| рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит 
+										| советских времен.
+
+
+
+								.message-panel.comment-lead__message-panel
+									//- .message-panel__inner
+									.message-panel__bg
+									.message-panel__left-bg
+										img(src="images/corner/message-left-bg.svg", alt="")
+									.message-panel__right-bg
+										img(src="images/corner/message-right-bg.svg", alt="")
+
+									input(type="text").message-panel__input
+									.message-panel__right
+										ul.message-panel__icons
+											li
+												a(href="#")
+													img(src="images/icon/smile.png", alt="")
+											li
+												a(href="#")
+													img(src="images/icon/upload.png", alt="")
+										button.btn.message-panel__btn
+											| Отправить
+
+
+						.comment-list
+							.comment-box
+								.comment-box__image.profile-img
+									span
+										img(src="images/profile.jpg", alt="")
+								.comment-box__info.box-bd
+									.comment-box__heading
+										.comment-box__heading__left
+											h4.comment-box__title.text-sm
+												| Яна Прохорова
+										.comment-box__heading__right
+											.date.comment-box__date
+												| 24.10.19
+											//- a(href="#").close.comment-box__close
+											//- 	| x
+									.comment-box__body
+										p
+											| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+											| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+											| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+											| непонятным смыслом и придаст неповторимый колорит советских времен.
+
+							.comment-box
+								.comment-box__image.profile-img
+									span
+										img(src="images/profile.jpg", alt="")
+								.comment-box__info.box-bd
+									.comment-box__heading
+										.comment-box__heading__left
+											h4.comment-box__title.text-sm
+												| Яна Прохорова
+										.comment-box__heading__right
+											.date.comment-box__date
+												| 24.10.19
+											//- a(href="#").close.comment-box__close
+											//- 	| x
+									.comment-box__body
+										p
+											| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+											| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+											| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+											| непонятным смыслом и придаст неповторимый колорит советских времен.
+
+
+				.cash
+					.cash-decor__top.cash-decor-item
+						img(src="images/decor/cash-decor-top.png", alt="")
+					.cash-decor__bottom.cash-decor-item
+						img(src="images/decor/cash-decor-bottom.png", alt="")
+
+					.cash__heading
+						.cash__heading__title.text-xl
+							| Пополнение
+						.cash__heading__icon
+							img(src="images/icon/wallet.png", alt="")
+					.cash__body 
+						form(action="#").cash-form
+							.cash-form__group
+								label.cash-form__label
+									img(src="images/icon/balans.png", alt="")
+									| Ваш баланс: 0
+								.cash-form__append
+									input.cash-form__input(type="text", placeholder='')
+									//- input.cash-form__input(type="text")
+							.cash-form__logo
+								img(src="images/icon/logotip-payeer.png", alt="")
+							button.btn.cash-form__btn.text-sm
+								| ПОПОЛНИТЬ СЧЕТ
+
+
+
+
+				.form-regist.panel
+					.form-regist-decor-item.form-regist-decor__top
+						img(src="images/decor/decor-form-regist__top.png", alt="")
+					.form-regist-decor-item.form-regist-decor__bottom
+						img(src="images/decor/decor-form-regist__top.png", alt="")
+					form(action="#")
+						.form-regist__top
+							.row
+								.col-12 
+									input(type="file", name="filepond" ).regist-form__bg.file-upload.my-pond
+									//- добавьте фото обложки
+								.col-xl-4
+									input(type="file", name="filepond", ).regist-form__foto.file-upload.my-pond
+								.col-xl-4
+									.form-group
+										input.form-control(type="text" placeholder="ВВедите имя")
+									.form-group
+										input.form-control(type="text" placeholder="город")
+									.form-group
+										input.form-control(type="text" placeholder="e-mail")
+
+								.col-xl-4
+									.form-group
+										input.form-control(type="text" placeholder="ВВедите имя")
+									.form-group
+										input.form-control(type="text" placeholder="город")
+									.form-group
+										button.btn.btn-xl.regist-form__btn.btn-block
+											| Сохранить
+
+						.form-regist__bottom
+							h3.form-regist__bottom__title.text-md
+								| ДОПОЛНИТЕЛЬНАЯ ИФОРМАЦИЯ О СЕБЕ:
+							textarea.form-control.form-regist__textarea(placeholder="в данном блоке человек указывает дополнительную информацию о себе, о своих увлечениях которая будет выводиться в его анкете.")
+
+
+				.gallery-list
+					.row
+						.col-lg-4
+							.gallery-box-wrap
+								.gallery-box-decor-item.gallery-box-decor__top
+									img(src="images/decor/decor-gallery.png", alt="")
+								.gallery-box-decor-item.gallery-box-decor__bottom
+									img(src="images/decor/decor-gallery.png", alt="")
+
+								.gallery-box
+									a(href="#").gallery-box__link
+									img(src="images/gallery-img.png", alt="").gallery-box__image
+									span.gallery-box__image__ico
+										img(src="images/video-ico.png", alt="")
+									ul.gallery-box__meta.meta-info
+										li
+											a(href="#").text-md
+												span.meta-info__ico
+													img(src="images/icon/hearth.svg", alt="")
+												| 15
+										li
+											a(href="#").text-md
+												span.meta-info__ico
+													img(src="images/icon/link.svg", alt="")
+												| 7
+
+
+
+				.chat
+					.chat-sidebar
+						.chat-sidebar-decor-item.chat-sidebar-decor__top
+							img(src="images/decor/chat-sidebar-top.png", alt="")
+						.chat-sidebar-decor-item.chat-sidebar-decor__left
+							img(src="images/decor/chat-sidebar-left.png", alt="")
+						.chat-sidebar-decor-item.chat-sidebar-decor__bottom
+							img(src="images/decor/chat-sidebar-bottom.png", alt="")
+						.chat-sidebar__panel
+							.chat-sidebar__panel__decor.chat-sidebar__panel__decor_top-left
+								img(src="images/corner/top-corn.svg", alt="")
+							.chat-sidebar__panel__decor.chat-sidebar__panel__decor_top-right
+								img(src="images/corner/right-corn.svg", alt="")
+							.chat-sidebar__panel__decor.chat-sidebar__panel__decor_bottom-left
+								img(src="images/corner/left-bottom-corn.svg", alt="")
+							.chat-sidebar__panel__decor.chat-sidebar__panel__decor_bottom-right
+								img(src="images/corner/right-bottom-corn.svg", alt="")
+									
+
+							.chat-sidebar__panel__line.chat-sidebar__panel__line_left
+							.chat-sidebar__panel__line.chat-sidebar__panel__line_top
+							.chat-sidebar__panel__line.chat-sidebar__panel__line_right
+							.chat-sidebar__panel__line.chat-sidebar__panel__line_bottom
+							.chat-sidebar-search.search
+
+								.search-right__bg
+									img(src="images/corner/chat-sidebar-search-right.svg", alt="")
+								form.search-form
+
+
+									input(type="text", placeholder="Поиск").search__input
+									.search__spinner.rotating
+										span
+							.chat-sidebar__profiles
+								.profile-box.profile_chat
+									.profile_chat__image.profile-img
+										span
+											img(src="images/profile.jpg", alt="")
+									.profile_chat__info
+										h4.profile_chat__title
+											| Яна Прохорова
+										p
+											| По своей сути рыбатекст является альтернативой традиционному ...
+
+
+
+
+					.chat-content
+						.chat-content__panel
+							.chat-content__panel__bg
+							.chat-content-decor-item.chat-content-decor__left-top
+								img(src="images/corner/left-top-chat.svg", alt="")
+							.chat-content-decor-item.chat-content-decor__right-top
+								img(src="images/corner/right-top-chat.svg", alt="")
+							.chat-content-decor-item.chat-content-decor__right-bottom
+								img(src="images/corner/right-bottom-chat.svg", alt="")
+							.chat-content-decor-item.chat-content-decor__left-bottom
+								img(src="images/corner/left-bottom-chat.svg", alt="")
+
+
+
+
+
+							.chat-content__panel__line.chat-content__panel__line_left
+							.chat-content__panel__line.chat-content__panel__line_top
+							.chat-content__panel__line.chat-content__panel__line_bottom
+							.chat-content__panel__line.chat-content__panel__line_right
+
+							//- left-top-chat
+							.chat-content__panel__inner
+								.chat-messages
+									.chat-message-box
+										.profile_chat__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										.chat-message-box__info
+											.chat-message-box__content
+												p
+													| По своей сути рыбатекст является альтернативой традиционному lorem 
+													| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+													| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+													| смыслом и придаст неповторимый колорит советских времен.
+											.chat-message-box__date
+												| 22:10
+									.chat-message-box
+										.profile_chat__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										.chat-message-box__info
+											.chat-message-box__content
+												p
+													| По своей сути рыбатекст является альтернативой традиционному lorem 
+													| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+													| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+													| смыслом и придаст неповторимый колорит советских времен.
+											.chat-message-box__date
+												| 22:10
+		
+								.message-panel
+									//- .message-panel__inner
+									.message-panel__bg
+									.message-panel__left-bg
+										img(src="images/corner/message-left-bg.svg", alt="")
+									.message-panel__right-bg
+										img(src="images/corner/message-right-bg.svg", alt="")
+
+									input(type="text").message-panel__input
+									.message-panel__right
+										ul.message-panel__icons
+											li
+												a(href="#")
+													img(src="images/icon/smile.png", alt="")
+											li
+												a(href="#")
+													img(src="images/icon/upload.png", alt="")
+										button.btn.message-panel__btn.text-sm
+											| Отправить
+
+				.profile-hor-wrap
+					.gallery-box-decor-item.gallery-box-decor__top
+						img(src="images/decor/decor-gallery.png", alt="")
+					.gallery-box-decor-item.gallery-box-decor__bottom
+						img(src="images/decor/decor-gallery.png", alt="")
+
+					.profile-hor
+						.profile-hor__bg
+							img(src="images/decor/profile-border.svg", alt="")
+						.profile-hor-top
+							.profile-hor-top__top
+								img(src="images/decor/profile-top-panel.svg", alt="")
+							.profile-hor-top__bottom
+								img(src="images/decor/profile-middle-panel.svg", alt="")
+
+								.profile-hor-top__content
+									.profile-hor-top__image.profile-img
+										a(href="#")
+											img(src="images/profile-detail.png", alt="")
+
+									.profile-hor-top__meta
+										.box-item
+											.id
+												| ID: 8998
+
+										.box-item
+											a.btn-small.btn.profile-hor-top__meta__btn
+												| + В ДРУЗЬЯ
+									h4.profile-hor-top__title.text-md
+										a(href="#")
+											| Яна Прохорова
+						.profile-hor-bottom
+							img(src="images/decor/profile-bottom-panel.svg", alt="")
+							.profile-hor-bottom__content
+								ul.profile-hor-bottom__content__info
+									li
+										.btn-small.btn
+											| Друзья: 432
+
+									li
+										.btn-small.btn
+											| ФОТО: 123
+									li
+										.btn-small.btn
+											| Видео: 63
+								.profile-hor-bottom__btn
+									a(href="#").btn-small.btn
+										| Написать
+									
+
+				
+				.profiles-panel
+					h3.profiles-panel__title.text-xl
+						| Мои друзья
+					.profiles-panel-list
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+								h4.profile-panel__title.text-xl
+									a(href="#")
+										| Яна Прохорова
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+								h4.profile-panel__title.text-xl
+									a(href="#")
+										| Яна Прохорова
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+								h4.profile-panel__title.text-xl
+									a(href="#")
+										| Яна Прохорова
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+								h4.profile-panel__title.text-xl
+									a(href="#")
+										| Яна Прохорова
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+								h4.profile-panel__title.text-xl
+									a(href="#")
+										| Яна Прохорова
+					.profiles-panel__more.text-xl
+						a(href="#")
+							| Посмотреть всех
+
+
+				.profiles-panel
+					h3.profiles-panel__title.text-xl
+						| Мои друзья
+					.profiles-panel-list.profiles-panel-list_grid
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+
+
+						.profiles-panel-list__item
+							.profile-panel
+								.profile-panel__image.profile-img
+									a(href="#")
+										img(src="images/profile-detail.png", alt="")
+
+					.profiles-panel__more.text-xl
+						a(href="#")
+							| Посмотреть всех
+
+				.news-panel
+					h2.news-panel__title.text-md
+						| Актуальные акции или важные новости:
+
+					.news-panel__inner.panel
+						.news-box.box-bd
+							h3.news-box__title.text-md
+								| МЕСЯЦ про аккаунта в подарок
+
+							a(href="#").btn.btn-xl.news-box__btn
+								| ПОДРОБНЕЕ
+
+						.news-box.box-bd
+							h3.news-box__title.text-md
+								| НОВЫЙ ЛИДЕР
+							a(href="#").btn.btn-xl.news-box__btn
+								| ПОДРОБНЕЕ
+
+
+
+
+		include pug/footer    

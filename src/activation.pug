@@ -1,0 +1,228 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		//- .site__layer
+		include pug/header
+
+		main.main
+			.container-fluid
+				.main-container.main-container_left-sidebar
+					.sidebar.left-sidebar
+
+							ul.category-nav
+								li 
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-1.png", srcset="images/icons/ico-1@2x.png 2x" alt="")
+										span.link
+											| Активация
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-2.png", srcset="images/icons/ico-2@2x.png 2x" alt="")
+										span.link
+											| Моя страница
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-3.png", srcset="images/icons/ico-3@2x.png 2x" alt="")
+										a(href="#")
+											| Новости
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-4.png", srcset="images/icons/ico-4@2x.png 2x" alt="")
+										span.link
+											| Сообщения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-5.png", srcset="images/icons/ico-5@2x.png 2x" alt="")
+										a(href="#")
+											| Топ-Лидеры
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-6.png", srcset="images/icons/ico-6@2x.png 2x" alt="")
+										span.link
+											| Друзья
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-7.png", srcset="images/icons/ico-7@2x.png 2x" alt="")
+										span.link
+											| Видеозаписи
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-8.png", srcset="images/icons/ico-8@2x.png 2x" alt="")
+										span.link
+											| Фотогалерея
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-9.png", srcset="images/icons/ico-9@2x.png 2x" alt="")
+										a(href="#")
+											| Музыка
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-10.png", srcset="images/icons/ico-10@2x.png 2x" alt="")
+										span.link
+											| Развлечения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-11.png", srcset="images/icons/ico-11@2x.png 2x" alt="")
+										span.link
+											| Реклама
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-12.png", srcset="images/icons/ico-12@2x.png 2x" alt="")
+										a(href="#")
+											| Настройки
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-13.png", srcset="images/icons/ico-13@2x.png 2x" alt="")
+										span.link
+											| Support
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-14.png", srcset="images/icons/ico-14@2x.png 2x" alt="")
+										span.link
+											| Выход
+
+
+							.news-panel
+								h2.news-panel__title.text-md
+									| Актуальные акции или важные новости:
+
+								.news-panel__inner.panel
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| МЕСЯЦ про аккаунта в подарок
+
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| НОВЫЙ ЛИДЕР
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+
+					.main-content
+
+						.active-header
+							h2.active-header__title.title-panel
+								| ACTIVATION
+
+							.active-header-right
+								a(href="#").btn.active-header__btn
+									| Купить клон в первый блок
+								.active-info.box-bd
+									.active-info-item
+										.active-info-item__label
+											| BALAYCE:
+										.active-info-item__field
+											| 1000
+									.active-info-item
+										.active-info-item__label
+											| CLONES:
+										.active-info-item__field
+											| 123
+
+
+
+						.active-grid
+
+							.row.active__row
+								each activeBox, key in activeGrid
+									//- .col-5.active__col
+									.col-lg-3.col-sm-6.active__col
+										.active__col__left-decor
+										.active__col__right-decor
+
+										.activ-box 
+											.activ-box__decor
+											.active-box__num.box-bd= `${key + 1}`
+
+												
+												span.active-box__num__decor.active-box__num__decor_top
+												span.active-box__num__decor.active-box__num__decor_bottom
+											.active-box__body
+												.active-box__item.box-bd
+													| ACTIVATION
+												
+												a(href="#").btn.active-box__item.box-bd
+													| Открыть
+
+				.sidebars-mobile.row
+					.col-6
+						.sidebar-mob-panel.sidebar-mob_news.box-bd
+							.sidebar-mob-toggle
+								span
+							.sidebar-mob-panel__inner
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| МЕСЯЦ про аккаунта в подарок
+
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+					.col-6
+						.d-flex.justify-content-end
+							.sidebar-mob-panel.sidebar-mob_profiles.profiles-mob.box-bd
+								.sidebar-mob-toggle
+									span
+								.sidebar-mob-panel__inner
+									h2.profiles-mob__title
+										| Топ-Лидеры
+									ul.profiles-mob__list
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+									.profiles-mob__view
+										a(href="#")
+											| Посмотреть всех
+
+		include pug/footer    

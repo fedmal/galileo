@@ -1,0 +1,469 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		//- .site__layer
+		include pug/header
+
+		main.main
+			.container-fluid
+				.main-container.main-container_left-sidebar
+					.sidebar.left-sidebar
+						.sidebar__inner
+							ul.category-nav
+								li 
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-1.png", srcset="images/icons/ico-1@2x.png 2x" alt="")
+										span.link
+											| Активация
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-2.png", srcset="images/icons/ico-2@2x.png 2x" alt="")
+										span.link
+											| Моя страница
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-3.png", srcset="images/icons/ico-3@2x.png 2x" alt="")
+										a(href="#")
+											| Новости
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-4.png", srcset="images/icons/ico-4@2x.png 2x" alt="")
+										span.link
+											| Сообщения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-5.png", srcset="images/icons/ico-5@2x.png 2x" alt="")
+										a(href="#")
+											| Топ-Лидеры
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-6.png", srcset="images/icons/ico-6@2x.png 2x" alt="")
+										span.link
+											| Друзья
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-7.png", srcset="images/icons/ico-7@2x.png 2x" alt="")
+										span.link
+											| Видеозаписи
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-8.png", srcset="images/icons/ico-8@2x.png 2x" alt="")
+										span.link
+											| Фотогалерея
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-9.png", srcset="images/icons/ico-9@2x.png 2x" alt="")
+										a(href="#")
+											| Музыка
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-10.png", srcset="images/icons/ico-10@2x.png 2x" alt="")
+										span.link
+											| Развлечения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-11.png", srcset="images/icons/ico-11@2x.png 2x" alt="")
+										span.link
+											| Реклама
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-12.png", srcset="images/icons/ico-12@2x.png 2x" alt="")
+										a(href="#")
+											| Настройки
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-13.png", srcset="images/icons/ico-13@2x.png 2x" alt="")
+										span.link
+											| Support
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-14.png", srcset="images/icons/ico-14@2x.png 2x" alt="")
+										span.link
+											| Выход
+							.news-panel
+								h2.news-panel__title.text-md
+									| Актуальные акции или важные новости:
+
+								.news-panel__inner.panel
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| МЕСЯЦ про аккаунта в подарок
+
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| НОВЫЙ ЛИДЕР
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+
+					.main-content.main-content_center
+						.chat
+							.chat-sidebar
+								.chat-sidebar-decor-item.chat-sidebar-decor__top
+									img(src="images/decor/chat-sidebar-top.png", alt="")
+								.chat-sidebar-decor-item.chat-sidebar-decor__left
+									img(src="images/decor/chat-sidebar-left.png", alt="")
+								.chat-sidebar-decor-item.chat-sidebar-decor__bottom
+									img(src="images/decor/chat-sidebar-bottom.png", alt="")
+								.chat-sidebar__panel
+									.chat-sidebar__panel__decor.chat-sidebar__panel__decor_top-left
+										img(src="images/corner/top-corn.svg", alt="")
+									.chat-sidebar__panel__decor.chat-sidebar__panel__decor_top-right
+										img(src="images/corner/right-corn.svg", alt="")
+									.chat-sidebar__panel__decor.chat-sidebar__panel__decor_bottom-left
+										img(src="images/corner/left-bottom-corn.svg", alt="")
+									.chat-sidebar__panel__decor.chat-sidebar__panel__decor_bottom-right
+										img(src="images/corner/right-bottom-corn.svg", alt="")
+											
+
+									.chat-sidebar__panel__line.chat-sidebar__panel__line_left
+									.chat-sidebar__panel__line.chat-sidebar__panel__line_top
+									.chat-sidebar__panel__line.chat-sidebar__panel__line_right
+									.chat-sidebar__panel__line.chat-sidebar__panel__line_bottom
+									.chat-sidebar-search.search
+
+										.search-right__bg
+											img(src="images/corner/chat-sidebar-search-right.svg", alt="")
+										form.search-form
+
+
+											input(type="text", placeholder="Поиск").search__input
+											.search__spinner.rotating
+												span
+									.chat-sidebar__profiles
+										.profile-box.profile_chat
+											.profile_chat__image.profile-img
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile_chat__info
+												h4.profile_chat__title
+													| Яна Прохорова
+												p
+													| По своей сути рыбатекст является альтернативой традиционному ...
+										.profile-box.profile_chat
+											.profile_chat__image.profile-img
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile_chat__info
+												h4.profile_chat__title
+													| Яна Прохорова
+												p
+													| По своей сути рыбатекст является альтернативой традиционному ...
+										.profile-box.profile_chat
+											.profile_chat__image.profile-img
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile_chat__info
+												h4.profile_chat__title
+													| Яна Прохорова
+												p
+													| По своей сути рыбатекст является альтернативой традиционному ...
+										.profile-box.profile_chat
+											.profile_chat__image.profile-img
+												span
+													img(src="images/profile.jpg", alt="")
+											.profile_chat__info
+												h4.profile_chat__title
+													| Яна Прохорова
+												p
+													| По своей сути рыбатекст является альтернативой традиционному ...
+
+
+
+
+
+							.chat-content
+								.chat-content__panel
+									.chat-content__panel__bg
+									.chat-content-decor-item.chat-content-decor__left-top
+										img(src="images/corner/left-top-chat.svg", alt="")
+									.chat-content-decor-item.chat-content-decor__right-top
+										img(src="images/corner/right-top-chat.svg", alt="")
+									.chat-content-decor-item.chat-content-decor__right-bottom
+										img(src="images/corner/right-bottom-chat.svg", alt="")
+									.chat-content-decor-item.chat-content-decor__left-bottom
+										img(src="images/corner/left-bottom-chat.svg", alt="")
+
+
+
+
+
+									.chat-content__panel__line.chat-content__panel__line_left
+									.chat-content__panel__line.chat-content__panel__line_top
+									.chat-content__panel__line.chat-content__panel__line_bottom
+									.chat-content__panel__line.chat-content__panel__line_right
+
+									//- left-top-chat
+									.chat-content__panel__inner
+										.scrollbar-inner 
+											.chat-messages
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+				
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+
+
+
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+				
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+
+
+
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10
+												.chat-message-box
+													.profile_chat__image.profile-img
+														span
+															img(src="images/profile.jpg", alt="")
+													.chat-message-box__info
+														.chat-message-box__content.text
+															p
+																| По своей сути рыбатекст является альтернативой традиционному lorem 
+																| ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+																| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+																| смыслом и придаст неповторимый колорит советских времен.
+														.chat-message-box__date
+															| 22:10				
+
+
+										.message-panel
+											//- .message-panel__inner
+											.message-panel__bg
+											.message-panel__left-bg
+												img(src="images/corner/message-left-bg.svg", alt="")
+											.message-panel__right-bg
+												img(src="images/corner/message-right-bg.svg", alt="")
+
+											input(type="text").message-panel__input
+											.message-panel__right
+												ul.message-panel__icons
+													li
+														a(href="#")
+															img(src="images/icon/smile.png", alt="")
+													li
+														a(href="#")
+															img(src="images/icon/upload.png", alt="")
+												button.btn.message-panel__btn.text-sm
+													| Отправить
+
+				.sidebars-mobile.row
+					.col-6
+						.sidebar-mob-panel.sidebar-mob_news.box-bd
+							.sidebar-mob-toggle
+								span
+							.sidebar-mob-panel__inner
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| МЕСЯЦ про аккаунта в подарок
+
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+					.col-6
+						.d-flex.justify-content-end
+							.sidebar-mob-panel.sidebar-mob_profiles.profiles-mob.box-bd
+								.sidebar-mob-toggle
+									span
+								.sidebar-mob-panel__inner
+									h2.profiles-mob__title
+										| Топ-Лидеры
+									ul.profiles-mob__list
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+									.profiles-mob__view
+										a(href="#")
+											| Посмотреть всех
+
+
+
+		include pug/footer    
