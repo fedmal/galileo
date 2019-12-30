@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.css">
+		<link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
+		<link rel="stylesheet" href="css/main.css?v=1577682890855">
+	</head>
+	<body>
+		<div class="main-wrap">
+			<header class="header">
+				<div class="container-fluid">
+					<div class="header__inner">
+						<div class="row header__inner__row">
+							<div class="col header__left">
+								<div class="header__left__inner">
+									<div class="header__bg"><img src="images/header-bg.svg" alt=""></div>
+									<div class="header__left__content">
+										<div class="logo"><a href="/"><img src="images/logo.png" srcset="images/logo@2x.png 2x" alt=""></a></div>
+										<div class="header-mail"><a class="header-mail__icon" href="#"><img src="images/icon/mail.svg" alt=""></a>
+											<div class="header-mail__num box-bd">3</div>
+										</div>
+									</div>
+									<button class="navbar-toggler"><span class="navbar-toggler__inner"><span></span><span></span><span></span></span><span class="navbar-toggler__text">menu</span></button>
+								</div>
+							</div>
+							<div class="col header__right">
+								<nav class="main-nav">
+									<ul class="main-nav__list">
+										<li><a href="#">Пополнение</a></li>
+										<li><a href="#">Перевод</a></li>
+										<li><a href="#">Вывод</a></li>
+										<li><a href="#">Маркетинг</a></li>
+										<li><a href="#">Webinar</a></li>
+										<li><a href="#">Биржа</a></li>
+										<li><a href="#">SMM программы</a></li>
+										<li><a href="#">Копилка</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="sidebar panel">
+								<ul class="category-nav">
+									<li> <a href="#"><span class="icon"><img src="images/icons/ico-1.png" srcset="images/icons/ico-1@2x.png 2x" alt=""></span><span class="link">Активация</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-2.png" srcset="images/icons/ico-2@2x.png 2x" alt=""></span><span class="link">Моя страница</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-3.png" srcset="images/icons/ico-3@2x.png 2x" alt=""></span><span class="link">Новости</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-4.png" srcset="images/icons/ico-4@2x.png 2x" alt=""></span><span class="link">Сообщения</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-5.png" srcset="images/icons/ico-5@2x.png 2x" alt=""></span><span class="link">Топ-Лидеры</span></a></li>
+									<li><a href="#"> <span class="icon"><img src="images/icons/ico-6.png" srcset="images/icons/ico-6@2x.png 2x" alt=""></span><span class="link">Друзья</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-7.png" srcset="images/icons/ico-7@2x.png 2x" alt=""></span><span class="link">Видеозаписи</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-8.png" srcset="images/icons/ico-8@2x.png 2x" alt=""></span><span class="link">Фотогалерея</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-9.png" srcset="images/icons/ico-9@2x.png 2x" alt=""></span><span class="link">Музыка</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-10.png" srcset="images/icons/ico-10@2x.png 2x" alt=""></span><span class="link">Развлечения</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-11.png" srcset="images/icons/ico-11@2x.png 2x" alt=""></span><span class="link">Реклама</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-12.png" srcset="images/icons/ico-12@2x.png 2x" alt=""></span><span class="link">Настройки</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-13.png" srcset="images/icons/ico-13@2x.png 2x" alt=""></span><span class="link">Support</span></a></li>
+									<li><a href="#"><span class="icon"><img src="images/icons/ico-14.png" srcset="images/icons/ico-14@2x.png 2x" alt=""></span><span class="link">Выход</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-8">
+							<div class="header-info">
+								<div class="header-info__item">
+									<div class="header-info-box">
+										<div class="header-info-box__label">ДРУЗЬЯ </div>
+										<div class="header-info-box__count">733</div>
+									</div>
+								</div>
+								<div class="header-info__item">
+									<div class="header-info-box">
+										<div class="header-info-box__label">ЗАЯВКИ</div>
+										<div class="header-info-box__count">26</div>
+									</div>
+								</div>
+								<div class="header-info__item header-info__search">
+									<div class="search">
+										<div class="search-right__bg"><img src="images/corner/chat-sidebar-search-right.svg" alt=""></div>
+										<form class="search-form">
+											<input class="search__input" type="text" placeholder="Поиск">
+											<div class="search__spinner rotating"><span></span></div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="lavels">
+								<div class="row lavels__row">
+									<div class="col-xl-6 lavels__col">
+										<div class="lavel-line"><span></span></div>
+										<div class="lavel-box">
+											<div class="lavel-box__line"><span></span></div>
+											<div class="lavel-box__decor lavel-box__decor_top"><img src="images/lavel/panel-blue-decor.svg" alt=""></div>
+											<div class="lavel-box__decor lavel-box__decor_bottom"><img src="images/lavel/panel-blue-decor.svg" alt=""></div>
+											<h2 class="lavel-box__title">ACTIVATION</h2>
+											<div class="lavel-box__content">
+												<p>
+													Добро пожаловать на первый уровень Активации! 
+													Вы уже сделали свой первый шаг к успеху. С этого момента вы становитесь нашим 
+													пользователем, а значит мы начинаем платить вам за ваше время. Вы получаете 
+													пассивный доход и можете проводить время в Galileo в свое удовольствие.
+												</p>
+											</div>
+											<div class="lavel-box__btn__wrap"><a class="btn btn-xl lavel-box__btn" href="#">Открыть</a></div>
+										</div>
+									</div>
+									<div class="col-xl-6 lavels__col">
+										<div class="lavel-box label-box_green">
+											<div class="lavel-box__line"><span></span></div>
+											<div class="lavel-box__decor lavel-box__decor_top"><img src="images/lavel/panel-green-decor.svg" alt=""></div>
+											<div class="lavel-box__decor lavel-box__decor_bottom"><img src="images/lavel/panel-green-decor.svg" alt=""></div>
+											<h2 class="lavel-box__title">POLYGON</h2>
+											<div class="lavel-box__content">
+												<p>
+													Поздравляем! Вы начинаете развивать свое сообщество и приглашать друзей! С этого 
+													момента каждый приглашенный вами друг будет приносить вам реальный доход! Все что 
+													вам нужно сделать для вашего успеха, это пригласить своих друзей и 
+													наслаждаться общением.
+												</p>
+											</div>
+											<div class="lavel-box__btn__wrap"><a class="btn btn-xl lavel-box__btn" href="#">Открыть</a></div>
+										</div>
+									</div>
+									<div class="col-xl-6 lavels__col">
+										<div class="lavel-box label-box_red">
+											<div class="lavel-box__line"><span></span></div>
+											<div class="lavel-box__decor lavel-box__decor_top"><img src="images/lavel/panel-red-decor.svg" alt=""></div>
+											<div class="lavel-box__decor lavel-box__decor_bottom"><img src="images/lavel/panel-red-decor.svg" alt=""></div>
+											<h2 class="lavel-box__title">VIP</h2>
+											<div class="lavel-box__content">
+												<p>
+													Хочешь получить больше? Уровень VIP – только для тех, кто не боится больших 
+													доходов! Попадая на этот уровень, вы можете стать королём этой вселенной! 
+													Вы будете управлять не только своей компанией, но и получать с нее отличные 
+													дивиденды! VIP - подарит вам возможность получить: круизное 
+													VIP – путешествие, квартиру с техникой Galileo, Автомобиль и 100 000$! 
+													Переходите на уровень VIP И ЗАБЕРИТЕ СВОЕ ПО ПРАВУ!
+												</p>
+											</div>
+											<div class="lavel-box__btn__wrap"><a class="btn btn-xl lavel-box__btn" href="#">Открыть</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pyramid-grid">
+						<div class="row pyramid__row">
+							<div class="col-12 pyramid__col pyramid__col_lead">
+								<div class="pyramid__col__line"><span></span></div>
+								<div class="profile-box panel profile_pyramid">
+									<div class="profile-box__image"><span><img src="images/profile.jpg" alt=""></span></div>
+									<div class="profile-box__info">
+										<div class="profile-box__cn">
+											<h4 class="profile-box__title">Яна Прохорова</h4>
+											<div class="profile-box__meta">ID: 108932</div>
+										</div>
+										<div class="profile-box__btns"><a class="btn btn-small profile-box__btn text-sm" href="#">сТруктура</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row pyramid__row">
+							<div class="col-lg-4 pyramid__col">
+								<div class="pyramid__col__line"><span></span></div>
+								<div class="profile-box panel profile_pyramid">
+									<div class="profile-box__image"><span><img src="images/profile.jpg" alt=""></span></div>
+									<div class="profile-box__info">
+										<div class="profile-box__cn">
+											<h4 class="profile-box__title">Яна Прохорова</h4>
+											<div class="profile-box__meta">ID: 108932</div>
+										</div>
+										<div class="profile-box__btns"><a class="btn btn-small profile-box__btn" href="#">Написать</a><a class="btn btn-small profile-box__btn" href="#">сТруктура</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 pyramid__col">
+								<div class="pyramid__col__line"><span></span></div>
+								<div class="profile-box panel profile_pyramid">
+									<div class="profile-box__image"><span><img src="images/profile.jpg" alt=""></span></div>
+									<div class="profile-box__info">
+										<div class="profile-box__cn">
+											<h4 class="profile-box__title">Яна Прохорова</h4>
+											<div class="profile-box__meta">ID: 108932</div>
+										</div>
+										<div class="profile-box__btns"><a class="btn btn-small profile-box__btn" href="#">Написать</a><a class="btn btn-small profile-box__btn" href="#">сТруктура</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 pyramid__col">
+								<div class="pyramid__col__line"><span></span></div>
+								<div class="profile-box panel profile_pyramid">
+									<div class="profile-box__image"><span><img src="images/profile.jpg" alt=""></span></div>
+									<div class="profile-box__info">
+										<div class="profile-box__cn">
+											<h4 class="profile-box__title">Яна Прохорова</h4>
+											<div class="profile-box__meta">ID: 108932</div>
+										</div>
+										<div class="profile-box__btns"><a class="btn btn-small profile-box__btn" href="#">Написать</a><a class="btn btn-small profile-box__btn" href="#">сТруктура</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="profiles-table">
+						<div class="profiles-table-decor-item profiles-table-decor__top"><img src="images/decor/profiles-table-decor.png" alt=""></div>
+						<div class="profiles-table-decor-item profiles-table-decor__bottom"><img src="images/decor/profiles-table-decor.png" alt=""></div>
+						<div class="profiles-table__panel">
+							<div class="profiles-table-decor-item profiles-table-decor__left-top"><img src="images/corner/table-left-top.svg" alt=""></div>
+							<div class="profiles-table-decor-item profiles-table-decor__right-top"><img src="images/corner/table-right-top.svg" alt=""></div>
+							<div class="profiles-table-decor-item profiles-table-decor__right-bottom"><img src="images/corner/table-right-bottom.svg" alt=""></div>
+							<div class="profiles-table-decor-item profiles-table-decor__left-bottom"><img src="images/corner/table-left-bottom.svg" alt=""></div>
+							<div class="profiles-table__panel__line profiles-table__panel__line_top"></div>
+							<div class="profiles-table__panel__line profiles-table__panel__line_left"></div>
+							<div class="profiles-table__panel__line profiles-table__panel__line_right"></div>
+							<div class="profiles-table__panel__line profiles-table__panel__line_bottom"></div>
+						</div>
+					</div>
+					<div class="profile-detail-wrap">
+						<div class="container_712">
+							<div class="decor-large">
+								<div class="decor-large__top decor-large-item"><img src="images/decor/top-large-top.png" alt=""></div>
+								<div class="decor-large__bottom decor-large-item"><img src="images/decor/top-large-bottom.png" alt=""></div>
+								<div class="profile-detail box-bd">
+									<div class="profile-detail__left">
+										<div class="profile-detail__content box-bd">
+											<p>Хореограф <br>Постановщик <br>Вдохновитель <br>dance_school_megapir <br>МАМА <br>стиль ,мода ,еда ,путешествия</p>
+										</div>
+									</div>
+									<div class="profile-detail__right">
+										<div class="profile-detail__panel box-bd">
+											<ul class="profile-detail__list">
+												<li class="box-bd">Друзья: 432</li>
+												<li class="box-bd">ФОТО: 123</li>
+												<li class="box-bd">Видео: 63</li>
+											</ul>
+											<div class="profile-detail__image profile-img"><span><img src="images/profile-detail.png" alt=""></span></div>
+										</div>
+										<div class="profile-detail__bottom">
+											<div class="profile-detail__bottom__inner">
+												<div class="profile__detail__title text-xl">Яна<br>Прохорова</div>
+												<div class="profile__detail__id">ID: 108932</div><a class="profile__detail__button btn btn-small" href="#">НАПИСАТЬ</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="message-panel">
+									<div class="message-panel__bg"></div>
+									<div class="message-panel__left-bg"><img src="images/corner/message-left-bg.svg" alt=""></div>
+									<div class="message-panel__right-bg"><img src="images/corner/message-right-bg.svg" alt=""></div>
+									<input class="message-panel__input text-sm" type="text">
+									<div class="message-panel__right">
+										<ul class="message-panel__icons">
+											<li><a href="#"><img src="images/icon/smile.png" alt=""></a></li>
+											<li><a href="#"><img src="images/icon/upload.png" alt=""></a></li>
+										</ul>
+										<button class="btn message-panel__btn">Отправить</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments">
+						<div class="container_712">
+							<div class="comment-lead box-bd">
+								<div class="comment-lead__heading">
+									<div class="comment-lead__heading__left">
+										<div class="profile-head">
+											<div class="profile-head__image profile-img"><span><img src="images/profile.jpg" alt=""></span></div>
+											<h4 class="profile-head__title text-sm">Яна Прохорова</h4>
+										</div>
+									</div>
+									<div class="comment-lead__heading__right">
+										<div class="date comment-lead__date">24.10.19</div>
+									</div>
+								</div>
+								<div class="comment-lead__body">
+									<div class="comment-lead__content text">
+										<p>
+											По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+											некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст 
+											рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит 
+											советских времен.
+										</p>
+									</div>
+									<div class="message-panel comment-lead__message-panel">
+										<div class="message-panel__bg"></div>
+										<div class="message-panel__left-bg"><img src="images/corner/message-left-bg.svg" alt=""></div>
+										<div class="message-panel__right-bg"><img src="images/corner/message-right-bg.svg" alt=""></div>
+										<input class="message-panel__input" type="text">
+										<div class="message-panel__right">
+											<ul class="message-panel__icons">
+												<li><a href="#"><img src="images/icon/smile.png" alt=""></a></li>
+												<li><a href="#"><img src="images/icon/upload.png" alt=""></a></li>
+											</ul>
+											<button class="btn message-panel__btn">Отправить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comment-list">
+								<div class="comment-box">
+									<div class="comment-box__image profile-img"><span><img src="images/profile.jpg" alt=""></span></div>
+									<div class="comment-box__info box-bd">
+										<div class="comment-box__heading">
+											<div class="comment-box__heading__left">
+												<h4 class="comment-box__title text-sm">Яна Прохорова</h4>
+											</div>
+											<div class="comment-box__heading__right">
+												<div class="date comment-box__date">24.10.19</div>
+											</div>
+										</div>
+										<div class="comment-box__body">
+											<p>
+												По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+												который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+												В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+												непонятным смыслом и придаст неповторимый колорит советских времен.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="comment-box">
+									<div class="comment-box__image profile-img"><span><img src="images/profile.jpg" alt=""></span></div>
+									<div class="comment-box__info box-bd">
+										<div class="comment-box__heading">
+											<div class="comment-box__heading__left">
+												<h4 class="comment-box__title text-sm">Яна Прохорова</h4>
+											</div>
+											<div class="comment-box__heading__right">
+												<div class="date comment-box__date">24.10.19</div>
+											</div>
+										</div>
+										<div class="comment-box__body">
+											<p>
+												По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+												который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+												В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+												непонятным смыслом и придаст неповторимый колорит советских времен.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cash">
+						<div class="cash-decor__top cash-decor-item"><img src="images/decor/cash-decor-top.png" alt=""></div>
+						<div class="cash-decor__bottom cash-decor-item"><img src="images/decor/cash-decor-bottom.png" alt=""></div>
+						<div class="cash__heading">
+							<div class="cash__heading__title text-xl">Пополнение</div>
+							<div class="cash__heading__icon"><img src="images/icon/wallet.png" alt=""></div>
+						</div>
+						<div class="cash__body"> 
+							<form class="cash-form" action="#">
+								<div class="cash-form__group">
+									<label class="cash-form__label"><img src="images/icon/balans.png" alt="">Ваш баланс: 0</label>
+									<div class="cash-form__append">
+										<input class="cash-form__input" type="text" placeholder="">
+									</div>
+								</div>
+								<div class="cash-form__logo"><img src="images/icon/logotip-payeer.png" alt=""></div>
+								<button class="btn cash-form__btn text-sm">ПОПОЛНИТЬ СЧЕТ</button>
+							</form>
+						</div>
+					</div>
+					<div class="form-regist panel">
+						<div class="form-regist-decor-item form-regist-decor__top"><img src="images/decor/decor-form-regist__top.png" alt=""></div>
+						<div class="form-regist-decor-item form-regist-decor__bottom"><img src="images/decor/decor-form-regist__top.png" alt=""></div>
+						<form action="#">
+							<div class="form-regist__top">
+								<div class="row">
+									<div class="col-12"> 
+										<input class="regist-form__bg file-upload my-pond" type="file" name="filepond">
+									</div>
+									<div class="col-xl-4">
+										<input class="regist-form__foto file-upload my-pond" type="file" name="filepond">
+									</div>
+									<div class="col-xl-4">
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="ВВедите имя">
+										</div>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="город">
+										</div>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="e-mail">
+										</div>
+									</div>
+									<div class="col-xl-4">
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="ВВедите имя">
+										</div>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="город">
+										</div>
+										<div class="form-group">
+											<button class="btn btn-xl regist-form__btn btn-block">Сохранить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-regist__bottom">
+								<h3 class="form-regist__bottom__title text-md">ДОПОЛНИТЕЛЬНАЯ ИФОРМАЦИЯ О СЕБЕ:</h3>
+								<textarea class="form-control form-regist__textarea" placeholder="в данном блоке человек указывает дополнительную информацию о себе, о своих увлечениях которая будет выводиться в его анкете."></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="gallery-list">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="gallery-box-wrap">
+									<div class="gallery-box-decor-item gallery-box-decor__top"><img src="images/decor/decor-gallery.png" alt=""></div>
+									<div class="gallery-box-decor-item gallery-box-decor__bottom"><img src="images/decor/decor-gallery.png" alt=""></div>
+									<div class="gallery-box"><a class="gallery-box__link" href="#"></a><img class="gallery-box__image" src="images/gallery-img.png" alt=""><span class="gallery-box__image__ico"><img src="images/video-ico.png" alt=""></span>
+										<ul class="gallery-box__meta meta-info">
+											<li><a class="text-md" href="#"><span class="meta-info__ico"><img src="images/icon/hearth.svg" alt=""></span>15</a></li>
+											<li><a class="text-md" href="#"><span class="meta-info__ico"><img src="images/icon/link.svg" alt=""></span>7</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chat">
+						<div class="chat-sidebar">
+							<div class="chat-sidebar-decor-item chat-sidebar-decor__top"><img src="images/decor/chat-sidebar-top.png" alt=""></div>
+							<div class="chat-sidebar-decor-item chat-sidebar-decor__left"><img src="images/decor/chat-sidebar-left.png" alt=""></div>
+							<div class="chat-sidebar-decor-item chat-sidebar-decor__bottom"><img src="images/decor/chat-sidebar-bottom.png" alt=""></div>
+							<div class="chat-sidebar__panel">
+								<div class="chat-sidebar__panel__decor chat-sidebar__panel__decor_top-left"><img src="images/corner/top-corn.svg" alt=""></div>
+								<div class="chat-sidebar__panel__decor chat-sidebar__panel__decor_top-right"><img src="images/corner/right-corn.svg" alt=""></div>
+								<div class="chat-sidebar__panel__decor chat-sidebar__panel__decor_bottom-left"><img src="images/corner/left-bottom-corn.svg" alt=""></div>
+								<div class="chat-sidebar__panel__decor chat-sidebar__panel__decor_bottom-right"><img src="images/corner/right-bottom-corn.svg" alt=""></div>
+								<div class="chat-sidebar__panel__line chat-sidebar__panel__line_left"></div>
+								<div class="chat-sidebar__panel__line chat-sidebar__panel__line_top"></div>
+								<div class="chat-sidebar__panel__line chat-sidebar__panel__line_right"></div>
+								<div class="chat-sidebar__panel__line chat-sidebar__panel__line_bottom"></div>
+								<div class="chat-sidebar-search search">
+									<div class="search-right__bg"><img src="images/corner/chat-sidebar-search-right.svg" alt=""></div>
+									<form class="search-form">
+										<input class="search__input" type="text" placeholder="Поиск">
+										<div class="search__spinner rotating"><span></span></div>
+									</form>
+								</div>
+								<div class="chat-sidebar__profiles">
+									<div class="profile-box profile_chat">
+										<div class="profile_chat__image profile-img"><span><img src="images/profile.jpg" alt=""></span></div>
+										<div class="profile_chat__info">
+											<h4 class="profile_chat__title">Яна Прохорова</h4>
+											<p>По своей сути рыбатекст является альтернативой традиционному ...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="chat-content">
+							<div class="chat-content__panel">
+								<div class="chat-content__panel__bg"></div>
+								<div class="chat-content-decor-item chat-content-decor__left-top"><img src="images/corner/left-top-chat.svg" alt=""></div>
+								<div class="chat-content-decor-item chat-content-decor__right-top"><img src="images/corner/right-top-chat.svg" alt=""></div>
+								<div class="chat-content-decor-item chat-content-decor__right-bottom"><img src="images/corner/right-bottom-chat.svg" alt=""></div>
+								<div class="chat-content-decor-item chat-content-decor__left-bottom"><img src="images/corner/left-bottom-chat.svg" alt=""></div>
+								<div class="chat-content__panel__line chat-content__panel__line_left"></div>
+								<div class="chat-content__panel__line chat-content__panel__line_top"></div>
+								<div class="chat-content__panel__line chat-content__panel__line_bottom"></div>
+								<div class="chat-content__panel__line chat-content__panel__line_right"></div>
+								<div class="chat-content__panel__inner">
+									<div class="chat-messages">
+										<div class="chat-message-box">
+											<div class="profile_chat__image profile-img"><span><img src="images/profile.jpg" alt=""></span></div>
+											<div class="chat-message-box__info">
+												<div class="chat-message-box__content">
+													<p>
+														По своей сути рыбатекст является альтернативой традиционному lorem 
+														ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+														В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+														смыслом и придаст неповторимый колорит советских времен.
+													</p>
+												</div>
+												<div class="chat-message-box__date">22:10</div>
+											</div>
+										</div>
+										<div class="chat-message-box">
+											<div class="profile_chat__image profile-img"><span><img src="images/profile.jpg" alt=""></span></div>
+											<div class="chat-message-box__info">
+												<div class="chat-message-box__content">
+													<p>
+														По своей сути рыбатекст является альтернативой традиционному lorem 
+														ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+														В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным 
+														смыслом и придаст неповторимый колорит советских времен.
+													</p>
+												</div>
+												<div class="chat-message-box__date">22:10</div>
+											</div>
+										</div>
+									</div>
+									<div class="message-panel">
+										<div class="message-panel__bg"></div>
+										<div class="message-panel__left-bg"><img src="images/corner/message-left-bg.svg" alt=""></div>
+										<div class="message-panel__right-bg"><img src="images/corner/message-right-bg.svg" alt=""></div>
+										<input class="message-panel__input" type="text">
+										<div class="message-panel__right">
+											<ul class="message-panel__icons">
+												<li><a href="#"><img src="images/icon/smile.png" alt=""></a></li>
+												<li><a href="#"><img src="images/icon/upload.png" alt=""></a></li>
+											</ul>
+											<button class="btn message-panel__btn text-sm">Отправить</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile-hor-wrap">
+						<div class="gallery-box-decor-item gallery-box-decor__top"><img src="images/decor/decor-gallery.png" alt=""></div>
+						<div class="gallery-box-decor-item gallery-box-decor__bottom"><img src="images/decor/decor-gallery.png" alt=""></div>
+						<div class="profile-hor">
+							<div class="profile-hor__bg"><img src="images/decor/profile-border.svg" alt=""></div>
+							<div class="profile-hor-top">
+								<div class="profile-hor-top__top"><img src="images/decor/profile-top-panel.svg" alt=""></div>
+								<div class="profile-hor-top__bottom"><img src="images/decor/profile-middle-panel.svg" alt="">
+									<div class="profile-hor-top__content">
+										<div class="profile-hor-top__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+										<div class="profile-hor-top__meta">
+											<div class="box-item">
+												<div class="id">ID: 8998</div>
+											</div>
+											<div class="box-item"><a class="btn-small btn profile-hor-top__meta__btn">+ В ДРУЗЬЯ</a></div>
+										</div>
+										<h4 class="profile-hor-top__title text-md"><a href="#">Яна Прохорова</a></h4>
+									</div>
+								</div>
+							</div>
+							<div class="profile-hor-bottom"><img src="images/decor/profile-bottom-panel.svg" alt="">
+								<div class="profile-hor-bottom__content">
+									<ul class="profile-hor-bottom__content__info">
+										<li>
+											<div class="btn-small btn">Друзья: 432</div>
+										</li>
+										<li>
+											<div class="btn-small btn">ФОТО: 123</div>
+										</li>
+										<li>
+											<div class="btn-small btn">Видео: 63</div>
+										</li>
+									</ul>
+									<div class="profile-hor-bottom__btn"><a class="btn-small btn" href="#">Написать</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="profiles-panel">
+						<h3 class="profiles-panel__title text-xl">Мои друзья</h3>
+						<div class="profiles-panel-list">
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+									<h4 class="profile-panel__title text-xl"><a href="#">Яна Прохорова</a></h4>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+									<h4 class="profile-panel__title text-xl"><a href="#">Яна Прохорова</a></h4>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+									<h4 class="profile-panel__title text-xl"><a href="#">Яна Прохорова</a></h4>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+									<h4 class="profile-panel__title text-xl"><a href="#">Яна Прохорова</a></h4>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+									<h4 class="profile-panel__title text-xl"><a href="#">Яна Прохорова</a></h4>
+								</div>
+							</div>
+						</div>
+						<div class="profiles-panel__more text-xl"><a href="#">Посмотреть всех</a></div>
+					</div>
+					<div class="profiles-panel">
+						<h3 class="profiles-panel__title text-xl">Мои друзья</h3>
+						<div class="profiles-panel-list profiles-panel-list_grid">
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+								</div>
+							</div>
+							<div class="profiles-panel-list__item">
+								<div class="profile-panel">
+									<div class="profile-panel__image profile-img"><a href="#"><img src="images/profile-detail.png" alt=""></a></div>
+								</div>
+							</div>
+						</div>
+						<div class="profiles-panel__more text-xl"><a href="#">Посмотреть всех</a></div>
+					</div>
+					<div class="news-panel">
+						<h2 class="news-panel__title text-md">Актуальные акции или важные новости:</h2>
+						<div class="news-panel__inner panel">
+							<div class="news-box box-bd">
+								<h3 class="news-box__title text-md">МЕСЯЦ про аккаунта в подарок</h3><a class="btn btn-xl news-box__btn" href="#">ПОДРОБНЕЕ</a>
+							</div>
+							<div class="news-box box-bd">
+								<h3 class="news-box__title text-md">НОВЫЙ ЛИДЕР</h3><a class="btn btn-xl news-box__btn" href="#">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<nav class="menu-mob">
+				<ul class="menu-mob-list">
+					<li> <a href="#">Активация</a></li>
+					<li><a href="#">Моя страница</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Сообщения</a></li>
+					<li><a href="#">Топ-Лидеры</a></li>
+					<li><a href="#">Друзья</a></li>
+					<li><a href="#">Видеозаписи</a></li>
+					<li><a href="#">Фотогалерея</a></li>
+					<li><a href="#">Музыка</a></li>
+					<li><a href="#">Развлечения</a></li>
+					<li><a href="#">Реклама</a></li>
+					<li><a href="#">Настройки</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">Выход</a></li>
+				</ul>
+			</nav>
+		</div>
+		<script src="js/jquery/dist/jquery.min.js?v=1577682890855"> </script>
+		<script src="https://unpkg.com/filepond/dist/filepond.min.js"> </script>
+		<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"> </script>
+		<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+		<script src="js/vendor.js?v=1577682890855"></script>
+		<script src="js/main.js?v=1577682890855"></script>
+	</body>
+</html>
