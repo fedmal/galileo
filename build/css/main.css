@@ -14280,7 +14280,35 @@ a {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 30px; }
+  .chat-message-box.chat-message-box_answer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+    .chat-message-box.chat-message-box_answer .profile_chat__image {
+      margin-right: 0;
+      margin-left: 10px; }
+    .chat-message-box.chat-message-box_answer .chat-message-box__content {
+      padding-right: 0;
+      padding-left: 150px;
+      text-align: right; }
+      @media (max-width: 1600px) {
+        .chat-message-box.chat-message-box_answer .chat-message-box__content {
+          padding-left: 80px; } }
+      @media (max-width: 1199px) {
+        .chat-message-box.chat-message-box_answer .chat-message-box__content {
+          padding-left: 30px; } }
+    .chat-message-box.chat-message-box_answer .chat-message-box__date {
+      right: auto;
+      left: 0; }
+
+.chat-messages {
+  margin-bottom: 40px; }
 
 .chat-message-box__info {
   -webkit-box-flex: 1;
@@ -14322,35 +14350,6 @@ a {
       max-height: 500px; }
       .scrollbar-inner .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical {
         right: -12px; } }
-
-.chat-messages {
-  margin-bottom: 40px; }
-  .chat-messages .chat-message-box {
-    margin-bottom: 30px; }
-    .chat-messages .chat-message-box:nth-child(2n) {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-         -moz-box-orient: horizontal;
-         -moz-box-direction: reverse;
-          -ms-flex-direction: row-reverse;
-              flex-direction: row-reverse; }
-      .chat-messages .chat-message-box:nth-child(2n) .profile_chat__image {
-        margin-right: 0;
-        margin-left: 10px; }
-      .chat-messages .chat-message-box:nth-child(2n) .chat-message-box__content {
-        padding-right: 0;
-        padding-left: 150px;
-        text-align: right; }
-        @media (max-width: 1600px) {
-          .chat-messages .chat-message-box:nth-child(2n) .chat-message-box__content {
-            padding-left: 80px; } }
-        @media (max-width: 1199px) {
-          .chat-messages .chat-message-box:nth-child(2n) .chat-message-box__content {
-            padding-left: 30px; } }
-      .chat-messages .chat-message-box:nth-child(2n) .chat-message-box__date {
-        right: auto;
-        left: 0; }
 
 .chat-sidebar__panel__decor_top-left {
   width: 86px;
@@ -15947,5 +15946,56 @@ a {
   @media (min-width: 1200px) {
     .news-panel-form .news-panel__inner {
       min-height: 770px; } }
+
+.category-panel {
+  position: relative; }
+
+.category-panel-left-top-corner {
+  left: 0;
+  top: 0;
+  width: 24px; }
+
+.category-panel-right-top-corner {
+  right: 0;
+  top: 0;
+  width: 21px; }
+
+.category-panel-left-bottom-corner {
+  left: 0;
+  bottom: 0;
+  width: 26px; }
+
+.category-panel-right-bottom-corner {
+  right: 0;
+  bottom: 0;
+  width: 28px; }
+
+.category-panel-top-border {
+  left: 21px;
+  right: 20px;
+  top: 0; }
+
+.category-panel-left-border {
+  left: 0;
+  top: 26px;
+  bottom: 26px; }
+
+.category-panel-bottom-border {
+  left: 26px;
+  right: 26px;
+  bottom: 0; }
+
+.category-panel-right-border {
+  top: 26px;
+  right: 0;
+  bottom: 26px; }
+
+@media (min-width: 1200px) {
+  .category-panel {
+    padding-top: 15px; } }
+
+@media (max-width: 1199px) {
+  .category-panel .bd-hor, .category-panel .bd-vert, .category-panel .decor-corner {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
