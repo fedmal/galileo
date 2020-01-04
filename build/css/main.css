@@ -15998,4 +15998,137 @@ a {
   .category-panel .bd-hor, .category-panel .bd-vert, .category-panel .decor-corner {
     display: none; } }
 
+.polygon-page .active-header__title {
+  background-color: #375D46;
+  color: #88A9D3;
+  border-color: #88A9D3; }
+
+.polygon-page .active-header__btn {
+  background-color: rgba(27, 183, 90, 0.6);
+  border-color: #88A9D3;
+  color: #fff !important; }
+
+.polygon-page .active-info {
+  background: #375D46;
+  border: 1px solid #88A9D3; }
+
+.polygon-page .activ-box {
+  background: #375D46;
+  border: 1px solid #88A9D3;
+  -webkit-box-shadow: 0px 0px 30px rgba(27, 183, 90, 0.7);
+     -moz-box-shadow: 0px 0px 30px rgba(27, 183, 90, 0.7);
+          box-shadow: 0px 0px 30px rgba(27, 183, 90, 0.7);
+  opacity: 0.5; }
+  .polygon-page .activ-box.active {
+    opacity: 1; }
+  .polygon-page .activ-box .box-bd {
+    background: rgba(52, 111, 170, 0.26);
+    border: 1px solid #88A9D3;
+    color: #D8D8D8; }
+
+.vip-page .active-header {
+  margin-bottom: 50px; }
+
+.vip-page .active-header__title {
+  background-color: rgba(229, 107, 107, 0.26);
+  color: #D8D8D8;
+  border-color: #B19090; }
+
+.vip-page .active-header__btn {
+  background-color: rgba(229, 107, 107, 0.6);
+  border-color: #B19090;
+  color: #fff !important; }
+
+.vip-page .active-info {
+  background: rgba(229, 107, 107, 0.26);
+  border: 1px solid #B19090; }
+
+.vip-page .active__row {
+  overflow: visible; }
+
+.vip-page .active__col {
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+.vip-page .active__row .active__col::before {
+  display: none; }
+
+.activ-box.activ-box_vip {
+  opacity: .4;
+  padding-top: 48px;
+  padding-bottom: 28px;
+  border-top: 0;
+  background-color: transparent;
+  border-color: #B19090;
+  position: relative; }
+  .activ-box.activ-box_vip .active-box__num {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+       -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+         -o-transform: translate(-50%);
+            transform: translate(-50%);
+    background-image: url(../images/active-vip-num.svg);
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 90px;
+    top: -58px; }
+    .activ-box.activ-box_vip .active-box__num span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+           -o-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin-top: 12px; }
+  .activ-box.activ-box_vip .active-box__body {
+    max-width: 148px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+  .activ-box.activ-box_vip .box-bd {
+    background-color: rgba(229, 107, 107, 0.26);
+    border-color: #B19090; }
+  .activ-box.activ-box_vip .activ-box__decor__left, .activ-box.activ-box_vip .activ-box__decor__right {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 12px; }
+  .activ-box.activ-box_vip .activ-box__decor__left {
+    right: 100%; }
+  .activ-box.activ-box_vip .activ-box__decor__right {
+    left: 100%;
+    -webkit-transform: translateY(-50%) scaleX(-1);
+       -moz-transform: translateY(-50%) scaleX(-1);
+        -ms-transform: translateY(-50%) scaleX(-1);
+         -o-transform: translateY(-50%) scaleX(-1);
+            transform: translateY(-50%) scaleX(-1); }
+  .activ-box.activ-box_vip::before, .activ-box.activ-box_vip::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 10px;
+    border-top: 1px solid #B19090;
+    border-left: 5px;
+    width: 38%; }
+  .activ-box.activ-box_vip::before {
+    left: 0;
+    -webkit-border-radius: 10px 0 0 0;
+       -moz-border-radius: 10px 0 0 0;
+            border-radius: 10px 0 0 0; }
+  .activ-box.activ-box_vip::after {
+    right: 0;
+    -webkit-border-radius: 0 10px 0 0;
+       -moz-border-radius: 0 10px 0 0;
+            border-radius: 0 10px 0 0; }
+  .activ-box.activ-box_vip.active {
+    opacity: 1; }
+
 /*# sourceMappingURL=main.css.map */

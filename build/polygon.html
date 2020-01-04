@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.css">
 		<link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css">
-		<link rel="stylesheet" href="css/main.css?v=1578130990557">
+		<link rel="stylesheet" href="css/main.css?v=1578136279918">
 	</head>
-	<body>
+	<body class="polygon-page">
 		<div class="main-wrap">
 			<header class="header">
 				<div class="container-fluid">
@@ -48,7 +48,15 @@
 				<div class="container-fluid">
 					<div class="main-container main-container_left-sidebar">
 						<div class="sidebar left-sidebar">
-							<div class="sidebar__inner">
+							<div class="category-panel">
+								<div class="decor-corner category-panel-left-top-corner"><img src="images/corner/side-nav-left-top.svg" alt=""></div>
+								<div class="decor-corner category-panel-right-top-corner"><img src="images/corner/side-nav-right-top.svg" alt=""></div>
+								<div class="decor-corner category-panel-left-bottom-corner"><img src="images/corner/side-nav-left-bottom.svg" alt=""></div>
+								<div class="decor-corner category-panel-right-bottom-corner"><img src="images/corner/side-nav-right-bottom.svg" alt=""></div>
+								<div class="bd-hor category-panel-top-border"></div>
+								<div class="bd-vert category-panel-left-border"></div>
+								<div class="bd-vert category-panel-right-border"></div>
+								<div class="bd-hor category-panel-bottom-border"></div>
 								<ul class="category-nav">
 									<li> <a href="#"><span class="icon"><img src="images/icons/ico-1.png" srcset="images/icons/ico-1@2x.png 2x" alt=""></span><span class="link">Активация</span></a></li>
 									<li><a href="#"><span class="icon"><img src="images/icons/ico-2.png" srcset="images/icons/ico-2@2x.png 2x" alt=""></span><span class="link">Моя страница</span></a></li>
@@ -66,89 +74,106 @@
 									<li><a href="#"><span class="icon"><img src="images/icons/ico-14.png" srcset="images/icons/ico-14@2x.png 2x" alt=""></span><span class="link">Выход</span></a></li>
 								</ul>
 							</div>
-						</div>
-						<div class="main-content main-content_center">
-							<div class="form-regist panel">
-								<div class="form-regist-decor-item form-regist-decor__top"><img src="images/decor/decor-form-regist__top.png" alt=""></div>
-								<div class="form-regist-decor-item form-regist-decor__bottom"><img src="images/decor/decor-form-regist__top.png" alt=""></div>
-								<div class="decor-corner form-regist-left-top-corner"><img src="images/corner/form-profile-left-top.svg" alt=""></div>
-								<div class="decor-corner form-regist-right-top-corner"><img src="images/corner/form-profile-right-top.svg" alt=""></div>
-								<div class="decor-corner form-regist-left-bottom-corner"><img src="images/corner/form-profile-left-bottom.svg" alt=""></div>
-								<div class="decor-corner form-regist-right-bottom-corner"><img src="images/corner/form-profile-right-bottom.svg" alt=""></div>
-								<div class="bd-hor form-regist-top-border"></div>
-								<div class="bd-vert form-regist-left-border"></div>
-								<div class="bd-vert form-regist-right-border"></div>
-								<div class="bd-hor form-regist-bottom-border"></div>
-								<form action="#">
-									<div class="form-regist__top">
-										<div class="row">
-											<div class="col-12"> 
-												<input class="regist-form__bg file-upload my-pond" type="file" name="filepond">
-											</div>
-											<div class="col-xl-4 form-regist__left"> 
-												<input class="regist-form__foto file-upload my-pond-2" type="file" name="filepond">
-											</div>
-											<div class="col-xl-8 form-regist__right">
-												<div class="row">
-													<div class="col-sm-6">
-														<div class="form-group">
-															<input class="form-control" type="text" placeholder="ВВедите имя">
-														</div>
-													</div>
-													<div class="col-sm-6">
-														<div class="form-group">
-															<input class="form-control" type="text" placeholder="ВВедите фамилию">
-														</div>
-													</div>
-													<div class="col-sm-6">
-														<div class="form-group">
-															<input class="form-control" type="text" placeholder="город">
-														</div>
-													</div>
-													<div class="col-sm-6">
-														<div class="form-group">
-															<input class="form-control" type="text" placeholder="Телефон">
-														</div>
-													</div>
-													<div class="col-sm-6">
-														<div class="form-group">
-															<input class="form-control" type="text" placeholder="e-mail">
-														</div>
-													</div>
-													<div class="col-sm-6">
-														<div class="form-group">
-															<button class="btn btn-xl regist-form__btn btn-block">Сохранить</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+							<div class="news-panel">
+								<h2 class="news-panel__title text-md">Актуальные акции или важные новости:</h2>
+								<div class="news-panel__inner panel">
+									<div class="news-box box-bd">
+										<h3 class="news-box__title text-md">МЕСЯЦ про аккаунта в подарок</h3><a class="btn btn-xl news-box__btn" href="#">ПОДРОБНЕЕ</a>
 									</div>
-									<div class="form-regist__bottom">
-										<h3 class="form-regist__bottom__title text-md">ДОПОЛНИТЕЛЬНАЯ ИФОРМАЦИЯ О СЕБЕ:</h3>
-										<textarea class="form-control form-regist__textarea" placeholder="в данном блоке человек указывает дополнительную информацию о себе, о своих увлечениях которая будет выводиться в его анкете."></textarea>
+									<div class="news-box box-bd">
+										<h3 class="news-box__title text-md">НОВЫЙ ЛИДЕР</h3><a class="btn btn-xl news-box__btn" href="#">ПОДРОБНЕЕ</a>
 									</div>
-								</form>
+								</div>
 							</div>
 						</div>
-						<div class="sidebar right-sidebar">
-							<div class="sidebar__inner">
-								<div class="news-panel news-panel-form">
-									<h2 class="news-panel__title text-md">Актуальные акции или важные новости:</h2>
-									<div class="news-panel__inner">
-										<div class="decor-corner news-panel-left-top-corner"><img src="images/corner/news-panel-left-top.svg" alt=""></div>
-										<div class="decor-corner news-panel-right-top-corner"><img src="images/corner/news-panel-left-top.svg" alt=""></div>
-										<div class="decor-corner news-panel-left-bottom-corner"><img src="images/corner/news-panel-left-top.svg" alt=""></div>
-										<div class="decor-corner news-panel-right-bottom-corner"><img src="images/corner/news-panel-right-bottom.svg" alt=""></div>
-										<div class="bd-hor news-panel-top-border"></div>
-										<div class="bd-vert news-panel-left-border"></div>
-										<div class="bd-vert news-panel-right-border"></div>
-										<div class="bd-hor news-panel-bottom-border"></div>
-										<div class="news-box box-bd">
-											<h3 class="news-box__title text-md">МЕСЯЦ про аккаунта в подарок</h3><a class="btn btn-xl news-box__btn" href="#">ПОДРОБНЕЕ</a>
+						<div class="main-content">
+							<div class="active-header">
+								<h2 class="active-header__title title-panel">POLIGON</h2>
+								<div class="active-header-right"><a class="btn active-header__btn" href="#">Купить клон в первый блок</a>
+									<div class="active-info box-bd">
+										<div class="active-info-item">
+											<div class="active-info-item__label">BALAYCE:</div>
+											<div class="active-info-item__field">1000</div>
 										</div>
-										<div class="news-box box-bd">
-											<h3 class="news-box__title text-md">НОВЫЙ ЛИДЕР</h3><a class="btn btn-xl news-box__btn" href="#">ПОДРОБНЕЕ</a>
+										<div class="active-info-item">
+											<div class="active-info-item__label">CLONES:</div>
+											<div class="active-info-item__field">123</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="active-grid">
+								<div class="row active__row">
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box active">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">1<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">2<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">3<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">4<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">5<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">6<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">7<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 active__col">
+										<div class="active__col__left-decor"></div>
+										<div class="active__col__right-decor"></div>
+										<div class="activ-box">
+											<div class="activ-box__decor"></div>
+											<div class="active-box__num box-bd">8<span class="active-box__num__decor active-box__num__decor_top"></span><span class="active-box__num__decor active-box__num__decor_bottom"></span></div>
+											<div class="active-box__body"><a class="btn active-box__item box-bd" href="#">Открыть</a><a class="btn active-box__item box-bd" href="#">Купить</a></div>
 										</div>
 									</div>
 								</div>
@@ -213,11 +238,11 @@
 				</ul>
 			</nav>
 		</div>
-		<script src="js/jquery/dist/jquery.min.js?v=1578130990557"> </script>
+		<script src="js/jquery/dist/jquery.min.js?v=1578136279918"> </script>
 		<script src="https://unpkg.com/filepond/dist/filepond.min.js"> </script>
 		<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"> </script>
 		<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
-		<script src="js/vendor.js?v=1578130990557"></script>
-		<script src="js/main.js?v=1578130990557"></script>
+		<script src="js/vendor.js?v=1578136279918"></script>
+		<script src="js/main.js?v=1578136279918"></script>
 	</body>
 </html>
