@@ -1,0 +1,270 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		//- .site__layer
+		include pug/header
+
+		main.main
+			.container-fluid
+				.main-container.main-container_left-sidebar
+					.sidebar.left-sidebar
+
+							ul.category-nav
+								li 
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-1.png", srcset="images/icons/ico-1@2x.png 2x" alt="")
+										span.link
+											| Активация
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-2.png", srcset="images/icons/ico-2@2x.png 2x" alt="")
+										span.link
+											| Моя страница
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-3.png", srcset="images/icons/ico-3@2x.png 2x" alt="")
+										a(href="#")
+											| Новости
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-4.png", srcset="images/icons/ico-4@2x.png 2x" alt="")
+										span.link
+											| Сообщения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-5.png", srcset="images/icons/ico-5@2x.png 2x" alt="")
+										a(href="#")
+											| Топ-Лидеры
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-6.png", srcset="images/icons/ico-6@2x.png 2x" alt="")
+										span.link
+											| Друзья
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-7.png", srcset="images/icons/ico-7@2x.png 2x" alt="")
+										span.link
+											| Видеозаписи
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-8.png", srcset="images/icons/ico-8@2x.png 2x" alt="")
+										span.link
+											| Фотогалерея
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-9.png", srcset="images/icons/ico-9@2x.png 2x" alt="")
+										a(href="#")
+											| Музыка
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-10.png", srcset="images/icons/ico-10@2x.png 2x" alt="")
+										span.link
+											| Развлечения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-11.png", srcset="images/icons/ico-11@2x.png 2x" alt="")
+										span.link
+											| Реклама
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-12.png", srcset="images/icons/ico-12@2x.png 2x" alt="")
+										a(href="#")
+											| Настройки
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-13.png", srcset="images/icons/ico-13@2x.png 2x" alt="")
+										span.link
+											| Support
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-14.png", srcset="images/icons/ico-14@2x.png 2x" alt="")
+										span.link
+											| Выход
+
+
+
+							.news-panel
+								h2.news-panel__title.text-md
+									| Актуальные акции или важные новости:
+
+								.news-panel__inner.panel
+									.decor-corner.news-panel-left-top-corner
+										img(src="images/corner/news-panel-left-top.svg", alt="")
+									.decor-corner.news-panel-right-top-corner
+										img(src="images/corner/news-panel-left-top.svg", alt="")
+									.decor-corner.news-panel-left-bottom-corner
+										img(src="images/corner/news-panel-left-top.svg", alt="")
+									.decor-corner.news-panel-right-bottom-corner
+										img(src="images/corner/news-panel-right-bottom.svg", alt="")
+
+
+									.bd-hor.news-panel-top-border
+									.bd-vert.news-panel-left-border
+									.bd-vert.news-panel-right-border
+									.bd-hor.news-panel-bottom-border
+											
+
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| МЕСЯЦ про аккаунта в подарок
+
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+									.news-box.box-bd
+										h3.news-box__title.text-md
+											| НОВЫЙ ЛИДЕР
+										a(href="#").btn.btn-xl.news-box__btn
+											| ПОДРОБНЕЕ
+
+
+
+					.main-content
+
+						.cash.cash-panel
+							.cash-decor__top.cash-decor-item
+								img(src="images/decor/cash-decor-top.png", alt="")
+							.cash-decor__bottom.cash-decor-item
+								img(src="images/decor/cash-decor-bottom.png", alt="")
+							.cash-corner.cash-corner__left
+								img(src="images/corner/cash-corner-left.svg", alt="")
+							.cash-corner.cash-corner__right
+								img(src="images/corner/cash-corner-right.svg", alt="")
+							.cash__heading
+								.cash__heading__title.text-xl
+									| ПЕРЕВОД
+								.cash__heading__icon
+									img(src="images/icon/wallet.png", alt="")
+							.cash__body 
+								form(action="#").cash-form
+									.cash-form__group
+										label.cash-form__label
+											img(src="images/icon/cash-2.png", alt="")
+											span.cash-form__label__text
+												| Ваш баланс: 
+												span 
+													| 0
+										.cash-form__append
+											input.cash-form__input(type="text", placeholder='ID')
+											input.cash-form__input(type="text", placeholder='Сумма')
+
+									.cash-form__bottom
+										button.btn.cash-form__btn.text-sm
+											| ПЕРЕВОД
+
+										a(href="#").cash-form__hist-link
+											| История
+
+						.cash-table.cash-panel
+							table.cash-table-bx
+								thead
+									tr
+										th
+											| От кого
+										th
+											| КОМУ
+										th
+											| СУММА
+										th
+											| ВРЕМЯ
+								tbody
+									tr
+										td
+
+										td
+						
+										td
+
+										td
+
+
+								//- 	tr
+								//- 		td
+								//- 			| sdfsddsf
+								//- 		td
+								//- 			| sdfsddsf						
+								//- 		td
+								//- 			| sdfsddsf
+								//- 		td
+								//- 			| sdfsddsf
+
+				.sidebars-mobile.row
+					.col-6
+						.sidebar-mob-panel.sidebar-mob_news.box-bd
+							.sidebar-mob-toggle
+								span
+							.sidebar-mob-panel__inner
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| МЕСЯЦ про аккаунта в подарок
+
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+					.col-6
+						.d-flex.justify-content-end
+							.sidebar-mob-panel.sidebar-mob_profiles.profiles-mob.box-bd
+								.sidebar-mob-toggle
+									span
+								.sidebar-mob-panel__inner
+									h2.profiles-mob__title
+										| Топ-Лидеры
+									ul.profiles-mob__list
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+									.profiles-mob__view
+										a(href="#")
+											| Посмотреть всех
+
+
+		include pug/footer    

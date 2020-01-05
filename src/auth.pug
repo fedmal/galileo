@@ -1,0 +1,50 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		.auth_block
+			.auth_block_wrap
+
+
+				img.form_border_top(src='images/form_auth_border.svg', alt='')
+				.auth_wrap
+					.decor-corner.form-regist-left-top-corner
+						img(src="images/corner/form-profile-left-top.svg", alt="")
+					.decor-corner.form-regist-right-top-corner
+						img(src="images/corner/form-profile-right-top.svg", alt="")
+					.decor-corner.form-regist-left-bottom-corner
+						img(src="images/corner/form-profile-left-bottom.svg", alt="")
+					.decor-corner.form-regist-right-bottom-corner
+						img(src="images/corner/form-profile-right-bottom.svg", alt="")
+
+					.bd-hor.form-regist-top-border
+					.bd-vert.form-regist-left-border
+					.bd-vert.form-regist-right-border
+					.bd-hor.form-regist-bottom-border
+					
+					.logo_form
+						a(href='')
+							img.logo_img(src='images/logo_form.svg', alt='')
+					.auth_text
+						p
+							| Глобальная платформа, социальная сеть для заработка, в которой предприятия и независимые специалисты могут налаживать связи и сотрудничать друг с другом удаленно.
+					form.auth_form.border_area(action='', method='')
+						.form_wrap
+							h2.auth_title Вход
+							input.form-control.auth_form__input(type='text', value='', placeholder='Ключ')
+							
+							.custom-control.custom-checkbox.lost_system
+								input#auth.custom-control-input(type='checkbox')
+								label.custom-control-label(for='auth') Остаться в системе
+							button.btn.btn-xl.sing_in.border_area(type='submit') Войти
+					.auth_block__quest.text-md Нет аккаунта?
+					a.auth_block__btn.btn(href='#') Зарегистрироваться
+				img.form_border_bottom(src='images/form_auth_border.svg', alt='')
+
+
+
+		

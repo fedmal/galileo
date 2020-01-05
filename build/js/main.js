@@ -60,5 +60,8 @@ $(function() {
 
   $(".scrollbar-inner").mCustomScrollbar({
           theme:"minimal"
-    });
+  });
+
+
+  // var sidebar = new StickySidebar('.sidebar__inner', {topSpacing: 20, bottomSpacing: 40, minWidth: 0});
 });

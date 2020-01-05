@@ -104,7 +104,7 @@ block content
 											| Выход
 
 
-					.main-content.main-content_left-40
+					.main-content.main-content_top-offset
 						.gallery-header
 							span.gallery-header__left
 							a(href="#").btn.btn-style
@@ -124,7 +124,7 @@ block content
 											| Самые обсуждаемые
 						.gallery-list.row
 							each activeBox, key in activeGrid
-								.col-lg-4.col-md-6
+								.col-lg-4.col-md-6 
 									.gallery-box-wrap
 										.gallery-box-decor-item.gallery-box-decor__top
 											img(src="images/decor/decor-gallery.png", alt="")
@@ -133,7 +133,8 @@ block content
 
 										.gallery-box
 											a(href="#", data-toggle='modal', data-target='#image-modal').gallery-box__link
-											img(src="images/gallery-img.png", alt="").gallery-box__image
+											.gallery-box__image
+												img(src="images/gallery-img.png", alt="")
 											span.gallery-box__image__ico
 												img(src="images/video-ico.png", alt="")
 											ul.gallery-box__meta.meta-info
@@ -147,6 +148,61 @@ block content
 														span.meta-info__ico
 															img(src="images/icon/link.svg", alt="")
 														| 7
+				.sidebars-mobile.row
+					.col-6
+						.sidebar-mob-panel.sidebar-mob_news.box-bd
+							.sidebar-mob-toggle
+								span
+							.sidebar-mob-panel__inner
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| МЕСЯЦ про аккаунта в подарок
+
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+					.col-6
+						.d-flex.justify-content-end
+							.sidebar-mob-panel.sidebar-mob_profiles.profiles-mob.box-bd
+								.sidebar-mob-toggle
+									span
+								.sidebar-mob-panel__inner
+									h2.profiles-mob__title
+										| Топ-Лидеры
+									ul.profiles-mob__list
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+									.profiles-mob__view
+										a(href="#")
+											| Посмотреть всех
 
 
 
@@ -157,8 +213,13 @@ block content
 						img(src="images/icon/+.svg", alt="")
 
 					.modal-media__top
-						.modal-media__content
-							img(src="images/inx960x640.jpg", alt="")
+						.modal-media__content.modal-media_video.embed-responsive.embed-responsive-16by9
+
+
+							iframe.embed-responsive-item(src="//www.youtube.com/embed/48OJbbI0DfE" allowfullscreen)
+
+
+							//- img(src="images/inx960x640.jpg", alt="")
 						.modal-media__sa
 							ul.modal-media__meta.meta-info
 								li
@@ -198,49 +259,71 @@ block content
 												img(src="images/icon/upload.png", alt="")
 									button.btn.message-panel__btn
 										| Отправить
+							.comments-panel
 
-							.comment-list.modal-media__coomments
-								.comment-box
-									.comment-box__image.profile-img
-										span
-											img(src="images/profile.jpg", alt="")
-									.comment-box__info.box-bd
-										.comment-box__heading
-											.comment-box__heading__left
-												h4.comment-box__title.text-sm
-													| Яна Прохорова
-											.comment-box__heading__right
-												.date.comment-box__date
-													| 24.10.19
-												//- a(href="#").close.comment-box__close
-												//- 	| x
-										.comment-box__body.text
-											p
-												| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
-												| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
-												| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
-												| непонятным смыслом и придаст неповторимый колорит советских времен.
+								.decor-corner.comments-panel-left-top-corner
+									img(src="images/corner/comments-panel-left-top.svg", alt="")
+								.decor-corner.comments-panel-right-top-corner
+									img(src="images/corner/comments-panel-right-top.svg", alt="")
+								.decor-corner.comments-panel-left-bottom-corner
+									img(src="images/corner/comments-panel-left-bottom.svg", alt="")
+								.decor-corner.comments-panel-right-bottom-corner
+									img(src="images/corner/comments-panel-right-bottom.svg", alt="")
 
-								.comment-box
-									.comment-box__image.profile-img
-										span
-											img(src="images/profile.jpg", alt="")
-									.comment-box__info.box-bd
-										.comment-box__heading
-											.comment-box__heading__left
-												h4.comment-box__title.text-sm
-													| Яна Прохорова
-											.comment-box__heading__right
-												.date.comment-box__date
-													| 24.10.19
-												//- a(href="#").close.comment-box__close
-												//- 	| x
-										.comment-box__body.text
-											p
-												| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
-												| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
-												| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
-												| непонятным смыслом и придаст неповторимый колорит советских времен.
+								.bd-hor.comments-panel-top-border
+								.bd-vert.comments-panel-left-border
+								.bd-vert.comments-panel-right-border
+								.bd-hor.comments-panel-bottom-border
+								
+								.comment-list.modal-media__coomments
+									.comment-box
+										.comment-box__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										.comment-box__info.box-bd
+											.comment-box__heading
+												.comment-box__heading__left
+													h4.comment-box__title.text-sm
+														| Яна Прохорова
+												.comment-box__heading__right
+													.date.comment-box__date
+														| 24.10.19
+													a(href="#").comment-box__close
+														| x
+											.comment-box__body.text
+												p
+													| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+													| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+													| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+													| непонятным смыслом и придаст неповторимый колорит советских времен.
+
+									.comment-box
+										.comment-box__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										.comment-box__info.box-bd
+											.comment-box__heading
+												.comment-box__heading__left
+													h4.comment-box__title.text-sm
+														| Яна Прохорова
+												.comment-box__heading__right
+													.date.comment-box__date
+														| 24.10.19
+													a(href="#").comment-box__close
+														| x
+											.comment-box__body.text
+												p
+													| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+													| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+													| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+													| непонятным смыслом и придаст неповторимый колорит советских времен.
+													
+								.comments-panel__arrow
+									img(src="images/thee-arr.svg", alt="")
+
+
+
+
 
 
 

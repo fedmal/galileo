@@ -1,0 +1,327 @@
+extends pug/base
+
+append vars
+	-
+		var activeGrid = new Array(10);
+
+block content
+	.main-wrap
+		//- .site__layer
+		include pug/header
+
+		main.main
+			.container-fluid
+				.main-container.main-container_left-sidebar
+					.sidebar.left-sidebar
+
+							ul.category-nav
+								li 
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-1.png", srcset="images/icons/ico-1@2x.png 2x" alt="")
+										span.link
+											| Активация
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-2.png", srcset="images/icons/ico-2@2x.png 2x" alt="")
+										span.link
+											| Моя страница
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-3.png", srcset="images/icons/ico-3@2x.png 2x" alt="")
+										a(href="#")
+											| Новости
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-4.png", srcset="images/icons/ico-4@2x.png 2x" alt="")
+										span.link
+											| Сообщения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-5.png", srcset="images/icons/ico-5@2x.png 2x" alt="")
+										a(href="#")
+											| Топ-Лидеры
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-6.png", srcset="images/icons/ico-6@2x.png 2x" alt="")
+										span.link
+											| Друзья
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-7.png", srcset="images/icons/ico-7@2x.png 2x" alt="")
+										span.link
+											| Видеозаписи
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-8.png", srcset="images/icons/ico-8@2x.png 2x" alt="")
+										span.link
+											| Фотогалерея
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-9.png", srcset="images/icons/ico-9@2x.png 2x" alt="")
+										a(href="#")
+											| Музыка
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-10.png", srcset="images/icons/ico-10@2x.png 2x" alt="")
+										span.link
+											| Развлечения
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-11.png", srcset="images/icons/ico-11@2x.png 2x" alt="")
+										span.link
+											| Реклама
+
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-12.png", srcset="images/icons/ico-12@2x.png 2x" alt="")
+										a(href="#")
+											| Настройки
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-13.png", srcset="images/icons/ico-13@2x.png 2x" alt="")
+										span.link
+											| Support
+								li
+									a(href="#")
+										span.icon
+											img(src="images/icons/ico-14.png", srcset="images/icons/ico-14@2x.png 2x" alt="")
+										span.link
+											| Выход
+
+
+					.main-content.main-content_top-offset
+						.gallery-header
+							span.gallery-header__left
+							a(href="#").btn.btn-style
+								| ДОБАВИТЬ ФОТО
+							.gallery-sort
+								.gallery-sort__label
+									| РЕЙТИНГ:
+								ul.gallery-sort__list
+									li
+										a(href="#")
+											| Новые
+									li
+										a(href="#")
+											| По лайкам
+									li
+										a(href="#")
+											| Самые обсуждаемые
+						.gallery-list.row
+							each activeBox, key in activeGrid
+								.col-lg-4.col-md-6 
+									.gallery-box-wrap
+										.gallery-box-decor-item.gallery-box-decor__top
+											img(src="images/decor/decor-gallery.png", alt="")
+										.gallery-box-decor-item.gallery-box-decor__bottom
+											img(src="images/decor/decor-gallery.png", alt="")
+
+										.gallery-box
+											a(href="#", data-toggle='modal', data-target='#image-modal').gallery-box__link
+											.gallery-box__image
+												img(src="images/gallery-img.png", alt="")
+											//- span.gallery-box__image__ico
+											//- 	img(src="images/video-ico.png", alt="")
+											ul.gallery-box__meta.meta-info
+												li
+													a(href="#").text-md
+														span.meta-info__ico
+															img(src="images/icon/hearth.svg", alt="")
+														| 15
+												li
+													a(href="#").text-md
+														span.meta-info__ico
+															img(src="images/icon/link.svg", alt="")
+														| 7
+				.sidebars-mobile.row
+					.col-6
+						.sidebar-mob-panel.sidebar-mob_news.box-bd
+							.sidebar-mob-toggle
+								span
+							.sidebar-mob-panel__inner
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| МЕСЯЦ про аккаунта в подарок
+
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+								.news-box.box-bd
+									h3.news-box__title.text-md
+										| НОВЫЙ ЛИДЕР
+									a(href="#").btn.btn-xl.news-box__btn
+										| ПОДРОБНЕЕ
+
+					.col-6
+						.d-flex.justify-content-end
+							.sidebar-mob-panel.sidebar-mob_profiles.profiles-mob.box-bd
+								.sidebar-mob-toggle
+									span
+								.sidebar-mob-panel__inner
+									h2.profiles-mob__title
+										| Топ-Лидеры
+									ul.profiles-mob__list
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+										li
+											a(href="#")
+												| Яна Прохорова
+									.profiles-mob__view
+										a(href="#")
+											| Посмотреть всех
+
+
+
+		#image-modal.modal.modal-media(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+			.modal-dialog(role='document')
+				.modal-content
+					button.media-modal__close.close-modal(type='button', data-dismiss='modal', aria-label='Close')
+						img(src="images/icon/+.svg", alt="")
+
+					.modal-media__top
+						.modal-media__content.modal-media_image
+							img(src="images/inx960x640.jpg", alt="")
+						.modal-media__sa
+							ul.modal-media__meta.meta-info
+								li
+									a(href="#")
+										span.meta-info__ico
+											img(src="images/icon/hearth-bold.svg", alt="")
+										| 15
+								li
+									a(href="#")
+										span.meta-info__ico
+											img(src="images/icon/link-bold.svg", alt="")
+										| 7
+							button.modal-media__top__close.close-modal(type='button', data-dismiss='modal', aria-label='Close')
+								img(src="images/icon/modal-close-2.svg", alt="")
+
+						
+
+
+					.modal-media__bottom
+
+							.message-panel.modal-media__message
+								//- .message-panel__inner
+								.message-panel__bg
+								.message-panel__left-bg
+									img(src="images/corner/message-left-bg.svg", alt="")
+								.message-panel__right-bg
+									img(src="images/corner/message-right-bg.svg", alt="")
+
+								input(type="text").message-panel__input
+								.message-panel__right
+									ul.message-panel__icons
+										li
+											a(href="#")
+												img(src="images/icon/smile.png", alt="")
+										li
+											a(href="#")
+												img(src="images/icon/upload.png", alt="")
+									button.btn.message-panel__btn
+										| Отправить
+							.comments-panel
+
+
+
+								.decor-corner.comments-panel-left-top-corner
+									img(src="images/corner/comments-panel-left-top.svg", alt="")
+								.decor-corner.comments-panel-right-top-corner
+									img(src="images/corner/comments-panel-right-top.svg", alt="")
+								.decor-corner.comments-panel-left-bottom-corner
+									img(src="images/corner/comments-panel-left-bottom.svg", alt="")
+								.decor-corner.comments-panel-right-bottom-corner
+									img(src="images/corner/comments-panel-right-bottom.svg", alt="")
+
+								.bd-hor.comments-panel-top-border
+								.bd-vert.comments-panel-left-border
+								.bd-vert.comments-panel-right-border
+								.bd-hor.comments-panel-bottom-border
+								
+								.comment-list.modal-media__coomments
+									.comment-box
+										.comment-box__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										.comment-box__info.box-bd
+											.comment-box__heading
+												.comment-box__heading__left
+													h4.comment-box__title.text-sm
+														| Яна Прохорова
+												.comment-box__heading__right
+													.date.comment-box__date
+														| 24.10.19
+													a(href="#").comment-box__close
+														| x
+											.comment-box__body.text
+												p
+													| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+													| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+													| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+													| непонятным смыслом и придаст неповторимый колорит советских времен.
+
+									.comment-box
+										.comment-box__image.profile-img
+											span
+												img(src="images/profile.jpg", alt="")
+										.comment-box__info.box-bd
+											.comment-box__heading
+												.comment-box__heading__left
+													h4.comment-box__title.text-sm
+														| Яна Прохорова
+												.comment-box__heading__right
+													.date.comment-box__date
+														| 24.10.19
+													a(href="#").comment-box__close
+														| x
+											.comment-box__body.text
+												p
+													| По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+													| который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+													| В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет 
+													| непонятным смыслом и придаст неповторимый колорит советских времен.
+
+								.comments-panel__arrow
+									img(src="images/thee-arr.svg", alt="")
+
+
+
+
+
+
+
+		include pug/footer    
