@@ -63,7 +63,7 @@ $(function() {
   });
 
 
-  var sidebar = new StickySidebar('.category-panel', {topSpacing: 20, bottomSpacing: 40, minWidth: 1250});
+  var sidebar = new StickySidebar('.category-panel', {topSpacing: 80, bottomSpacing: 40, minWidth: 1250});
 
 
   $('.voice-btn').on('click', function (e) { 
@@ -76,23 +76,50 @@ $(function() {
   } );
 
 
-  // var sticky = new Waypoint.Sticky({
-  //   element: $('.header__inner')[0]
-  // })
+  var sticky = new Waypoint.Sticky({
+    element: $('.header')[0]
+  })
 
 
-     $(function() {
-        $(window).on("scroll", function () {
-            // Navbar On Scroll Animation
-            var navbar = $(".header__inner"),
-            HeroHeight = $(".header").height();
-            if ($(window).scrollTop() >= HeroHeight) {
-                navbar.addClass("nav-collapsed");
-            }
-            else {
-                navbar.removeClass("nav-collapsed");
-            }
-        })
-    });
+    //  $(function() {
+    //     $(window).on("scroll", function () {
+    //         // Navbar On Scroll Animation
+    //         var navbar = $(".header__inner"),
+    //         HeroHeight = $(".header").height();
+    //         if ($(window).scrollTop() >= HeroHeight) {
+    //             navbar.addClass("nav-collapsed");
+    //         }
+    //         else {
+    //             navbar.removeClass("nav-collapsed");
+    //         }
+    //     })
+    // });
+
+if($(window).width() > 1200) {
+
+      $(window).scroll(function () {
+        var distanceY = $(this).scrollTop(),
+            header    = $(".header"),
+            shrinkOn  = 220,
+            isFixed  =  350;
+        if (distanceY > shrinkOn) {
+          header.addClass("fixed-header");
+        } else {
+          if (header.hasClass("fixed-header")) {
+            header.removeClass("fixed-header");
+          }
+        }
+
+        if (distanceY > isFixed) {
+          header.addClass("is-fixed");
+        } else {
+          if (header.hasClass("is-fixed")) {
+            header.removeClass("is-fixed");
+          }
+        }
+      }); 
+
+};
+
 
 });
