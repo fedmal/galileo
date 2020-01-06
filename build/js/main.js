@@ -58,10 +58,21 @@ $(function() {
   } );
 
 
-  $(".scrollbar-inner").mCustomScrollbar({
+  $(".scrollbar-inner, .chat-sidebar__profiles").mCustomScrollbar({
           theme:"minimal"
   });
 
 
-  // var sidebar = new StickySidebar('.sidebar__inner', {topSpacing: 20, bottomSpacing: 40, minWidth: 0});
+  // var sidebar = new StickySidebar('.category-panel', {topSpacing: 20, bottomSpacing: 40, minWidth: 0});
+
+
+  $('.voice-btn').on('click', function (e) { 
+
+      $(this).toggleClass('voice-on');
+
+
+      e.preventDefault();
+    
+  } );
+
 });
