@@ -63,7 +63,7 @@ $(function() {
   });
 
 
-  // var sidebar = new StickySidebar('.category-panel', {topSpacing: 20, bottomSpacing: 40, minWidth: 0});
+  var sidebar = new StickySidebar('.category-panel', {topSpacing: 20, bottomSpacing: 40, minWidth: 1250});
 
 
   $('.voice-btn').on('click', function (e) { 
@@ -74,5 +74,25 @@ $(function() {
       e.preventDefault();
     
   } );
+
+
+  // var sticky = new Waypoint.Sticky({
+  //   element: $('.header__inner')[0]
+  // })
+
+
+     $(function() {
+        $(window).on("scroll", function () {
+            // Navbar On Scroll Animation
+            var navbar = $(".header__inner"),
+            HeroHeight = $(".header").height();
+            if ($(window).scrollTop() >= HeroHeight) {
+                navbar.addClass("nav-collapsed");
+            }
+            else {
+                navbar.removeClass("nav-collapsed");
+            }
+        })
+    });
 
 });
